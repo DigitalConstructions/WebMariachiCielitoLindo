@@ -1,0 +1,182 @@
+import { useEffect, useRef, useState, MouseEvent } from 'react';
+import { Play, Pause, Volume2, VolumeX, Menu, X } from 'lucide-react';
+import { AnimatePresence, motion } from 'motion/react';
+import { ViewState } from './types';
+import { HomeView, AboutView, ContactView } from './components/BasicViews';
+import GalleryView from './components/GalleryView';
+import RepertoireView from './components/RepertoireView';
+import AdminView from './components/AdminView';
+
+export default function App() {
+  const [currentView, setCurrentView] = useState<ViewState>('home');
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [hasInteracted, setHasInteracted] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  // Handle global click for autoplay
+  useEffect(() => {
+    const handleInteraction = () => {
+      if (!hasInteracted && audioRef.current) {
+        audioRef.current.play().then(() => {
+          setIsPlaying(true);
+          setHasInteracted(true);
+        }).catch(err => console.error("Audio playback failed:", err));
+      }
+    };
+
+    document.addEventListener('click', handleInteraction);
+    return () => document.removeEventListener('click', handleInteraction);
+  }, [hasInteracted]);
+
+  const togglePlay = (e: MouseEvent) => {
+    e.stopPropagation();
+    if (audioRef.current) {
+      if (isPlaying) {
+        audioRef.current.pause();
+      } else {
+        audioRef.current.play();
+      }
+      setIsPlaying(!isPlaying);
+    }
+  };
+
+  const toggleMute = (e: MouseEvent) => {
+    e.stopPropagation();
+    if (audioRef.current) {
+      audioRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
+    }
+  };
+
+  const navLinks: { id: ViewState, label: string }[] = [
+    { id: 'home', label: 'Inicio' },
+    { id: 'about', label: 'Nosotros' },
+    { id: 'gallery', label: 'Galería' },
+    { id: 'repertoire', label: 'Repertorio' },
+    { id: 'contact', label: 'Contacto' },
+  ];
+
+  return (
+    <div className="min-h-screen relative overflow-hidden bg-surface">
+      {/* Audio Element */}
+      <audio 
+        ref={audioRef} 
+        src="https://archive.org/download/TraditionalMexicanMariachi/104-MariachiTapatioDeJoseMarmolejo-LaNegra.mp3" 
+        loop 
+      />
+
+      {/* Floating Audio Controls */}
+      <div className="fixed bottom-8 right-8 z-50 flex items-center gap-3 glass-effect px-4 py-3 rounded-full border border-outline-variant/30 ambient-shadow">
+        <button onClick={togglePlay} className="text-primary hover:text-primary-container transition-colors">
+          {isPlaying ? <Pause size={20} /> : <Play size={20} />}
+        </button>
+        <div className="w-px h-4 bg-outline-variant/50"></div>
+        <button onClick={toggleMute} className="text-on-surface-variant hover:text-on-surface transition-colors">
+          {isMuted ? <VolumeX size={20} /> : <Volume2 size={20} />}
+        </button>
+        {!hasInteracted && (
+          <span className="text-xs text-on-surface-variant ml-2 animate-pulse hidden sm:inline">Haz clic para escuchar</span>
+        )}
+      </div>
+
+      {/* Navigation */}
+      <nav className="fixed top-0 w-full z-40 glass-effect border-b border-outline-variant/10">
+        <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+          <button onClick={() => setCurrentView('home')} className="font-serif text-2xl tracking-tighter text-primary hover:opacity-80 transition-opacity">
+            Mariachi Cielito Lindo
+          </button>
+          <div className="hidden md:flex items-center gap-8 font-label text-sm tracking-wide">
+            {navLinks.map(link => (
+              <button 
+                key={link.id}
+                onClick={() => setCurrentView(link.id)}
+                className={`transition-colors pb-1 ${currentView === link.id ? 'text-primary border-b border-primary' : 'text-on-surface-variant hover:text-primary'}`}
+              >
+                {link.label}
+              </button>
+            ))}
+          </div>
+          <button 
+            onClick={() => setCurrentView(currentView === 'admin' ? 'home' : 'admin')} 
+            className="hidden md:block gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm hover:shadow-[0_0_20px_rgba(255,203,70,0.3)] transition-all active:scale-95 rounded-full"
+          >
+            {currentView === 'admin' ? 'Volver al Inicio' : 'Acceso Usuarios'}
+          </button>
+          <button 
+            className="md:hidden text-primary p-2"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          >
+            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div 
+              key="mobile-menu"
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden bg-surface-container-low border-b border-outline-variant/10 overflow-hidden"
+            >
+              <div className="flex flex-col px-6 py-4 gap-4">
+                {navLinks.map(link => (
+                  <button 
+                    key={link.id}
+                    onClick={() => {
+                      setCurrentView(link.id);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`text-left text-lg py-2 transition-colors ${currentView === link.id ? 'text-primary font-bold' : 'text-on-surface-variant'}`}
+                  >
+                    {link.label}
+                  </button>
+                ))}
+                <button 
+                  onClick={() => {
+                    setCurrentView(currentView === 'admin' ? 'home' : 'admin');
+                    setIsMobileMenuOpen(false);
+                  }} 
+                  className="gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm rounded-full w-full mt-2"
+                >
+                  {currentView === 'admin' ? 'Volver al Inicio' : 'Acceso Usuarios'}
+                </button>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </nav>
+
+      {/* Main Content Area with Transitions */}
+      <main className="w-full min-h-screen">
+        <AnimatePresence mode="wait">
+          {currentView === 'home' && <HomeView key="home" setView={setCurrentView} />}
+          {currentView === 'about' && <AboutView key="about" setView={setCurrentView} />}
+          {currentView === 'gallery' && <GalleryView key="gallery" setView={setCurrentView} />}
+          {currentView === 'repertoire' && <RepertoireView key="repertoire" setView={setCurrentView} />}
+          {currentView === 'contact' && <ContactView key="contact" />}
+          {currentView === 'admin' && <AdminView key="admin" setView={setCurrentView} />}
+        </AnimatePresence>
+      </main>
+
+      {/* Footer */}
+      <footer className="w-full py-12 px-6 md:px-12 lg:px-24 bg-surface-container-lowest border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-8 relative z-30">
+        <div className="font-serif text-primary opacity-80 text-xl text-center md:text-left">
+          Mariachi Cielito Lindo
+        </div>
+        <div className="flex flex-wrap justify-center gap-6 md:gap-8 font-label text-sm">
+          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors">Facebook</a>
+          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors">Instagram</a>
+          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors">YouTube</a>
+          <a href="#" className="text-on-surface-variant hover:text-primary transition-colors">WhatsApp</a>
+        </div>
+        <div className="text-on-surface-variant text-xs font-light text-center md:text-right">
+          © 2026 Mariachi Cielito Lindo. Todos los derechos reservados.
+        </div>
+      </footer>
+    </div>
+  );
+}

@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "Song": {
+      "title": "Song",
+      "description": "A song in the mariachi repertoire",
+      "type": "object",
+      "properties": {
+        "title": { "type": "string", "description": "The title of the song" },
+        "artist": { "type": "string", "description": "The artist or composer" },
+        "genres": { "type": "array", "items": { "type": "string" }, "description": "List of genres" },
+        "occasions": { "type": "array", "items": { "type": "string" }, "description": "List of occasions" },
+        "link": { "type": "string", "description": "Link to the sheet music or guide" },
+        "dots": { "type": "number", "description": "Difficulty or popularity dots (1-4)" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" },
+        "createdBy": { "type": "string", "description": "UID of the creator" }
+      },
+      "required": ["title", "artist", "genres", "occasions", "dots", "createdAt", "createdBy"]
+    },
+    "User": {
+      "title": "User",
+      "description": "A registered user (admin or musician)",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email", "description": "User's email address" },
+        "name": { "type": "string", "description": "User's full name" },
+        "role": { "type": "string", "enum": ["admin", "musician", "user"], "description": "User's role" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["email", "name", "role", "createdAt"]
+    },
+    "PendingMusician": {
+      "title": "Pending Musician",
+      "description": "An invitation for a musician to join",
+      "type": "object",
+      "properties": {
+        "email": { "type": "string", "format": "email", "description": "Invited email" },
+        "name": { "type": "string", "description": "Name of the musician" },
+        "addedBy": { "type": "string", "description": "UID of the admin who added them" },
+        "createdAt": { "type": "string", "format": "date-time", "description": "Creation timestamp" }
+      },
+      "required": ["email", "name", "addedBy", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/songs/{songId}": {
+      "schema": { "$ref": "#/entities/Song" },
+      "description": "Collection of all songs"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "#/entities/User" },
+      "description": "Collection of registered users"
+    },
+    "/pending_musicians/{email}": {
+      "schema": { "$ref": "#/entities/PendingMusician" },
+      "description": "Collection of pending musician invitations"
+    }
+  }
+}
