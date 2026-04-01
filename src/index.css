@@ -16,6 +16,10 @@
   
   --color-on-surface: #e5e2e1;
   --color-on-surface-variant: #d2c5ae;
+
+  --color-error: #ff6b6b;
+  --color-on-error: #2b0000;
+  --color-error-container: #5c1f1f;
   
   --color-outline: #9b8f7a;
   --color-outline-variant: #4e4634;

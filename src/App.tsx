@@ -58,6 +58,12 @@ export default function App() {
     { id: 'contact', label: 'Contacto' },
   ];
 
+  const handleYoutubePlayerStateChange = (isOpen: boolean) => {
+    if (!isOpen || !audioRef.current) return;
+    audioRef.current.pause();
+    setIsPlaying(false);
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden bg-surface">
       {/* Audio Element */}
@@ -156,7 +162,7 @@ export default function App() {
           {currentView === 'home' && <HomeView key="home" setView={setCurrentView} />}
           {currentView === 'about' && <AboutView key="about" setView={setCurrentView} />}
           {currentView === 'gallery' && <GalleryView key="gallery" setView={setCurrentView} />}
-          {currentView === 'repertoire' && <RepertoireView key="repertoire" setView={setCurrentView} />}
+          {currentView === 'repertoire' && <RepertoireView key="repertoire" setView={setCurrentView} onYoutubePlayerStateChange={handleYoutubePlayerStateChange} />}
           {currentView === 'contact' && <ContactView key="contact" />}
           {currentView === 'admin' && <AdminView key="admin" setView={setCurrentView} />}
         </AnimatePresence>
