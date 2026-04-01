@@ -6,3 +6,7 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Export artifacts used only during WordPress migration prep
+data/wp-songs-normalized.json
+data/wp-songs-report.md
