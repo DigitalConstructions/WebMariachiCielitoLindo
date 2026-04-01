@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState, MouseEvent } from 'react';
-import { Play, Pause, Volume2, VolumeX, Menu, X, Facebook, Instagram, Youtube, MessageCircle } from 'lucide-react';
+import { Play, Pause, Volume2, VolumeX, Menu, X, Facebook, Instagram, Youtube, MessageCircle, Sun, Moon } from 'lucide-react';
 import { AnimatePresence, motion } from 'motion/react';
 import { ViewState } from './types';
 import { HomeView, AboutView, ContactView } from './components/BasicViews';
@@ -12,12 +12,25 @@ import logoHeader from '../medios/logos/logo_head_foot.png';
 import logoFooter from '../medios/logos/logo_head_foot_gra.png';
 
 export default function App() {
+  type ThemeMode = 'light' | 'dark';
   const [currentView, setCurrentView] = useState<ViewState>('home');
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
+    const savedTheme = window.localStorage.getItem('wmcl-theme');
+    if (savedTheme === 'dark' || savedTheme === 'light') {
+      return savedTheme;
+    }
+    return 'dark';
+  });
   const audioRef = useRef<HTMLAudioElement | null>(null);
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', themeMode);
+    window.localStorage.setItem('wmcl-theme', themeMode);
+  }, [themeMode]);
 
   // Handle global click for autoplay
   useEffect(() => {
@@ -68,6 +81,10 @@ export default function App() {
     setIsPlaying(false);
   };
 
+  const toggleTheme = () => {
+    setThemeMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden bg-surface">
       {/* Audio Element */}
@@ -92,7 +109,7 @@ export default function App() {
       </div>
 
       {/* Navigation */}
-      <nav className="fixed top-0 w-full z-40 glass-effect border-b border-outline-variant/10">
+      <nav className="site-nav fixed top-0 w-full z-40 glass-effect border-b border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <button
             onClick={() => setCurrentView('home')}
@@ -125,18 +142,34 @@ export default function App() {
               </button>
             ))}
           </div>
+          <button
+            onClick={toggleTheme}
+            aria-label={themeMode === 'dark' ? 'Cambiar a modo día' : 'Cambiar a modo noche'}
+            className="hidden md:inline-flex items-center justify-center w-11 h-11 rounded-full border border-outline-variant/40 text-on-surface-variant hover:text-on-surface hover:border-primary transition-colors"
+          >
+            {themeMode === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+          </button>
           <button 
             onClick={() => setCurrentView(currentView === 'admin' ? 'home' : 'admin')} 
             className="hidden md:block gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm hover:shadow-[0_0_20px_rgba(255,203,70,0.3)] transition-all active:scale-95 rounded-full"
           >
             {currentView === 'admin' ? 'Volver al Inicio' : 'Acceso Usuarios'}
           </button>
-          <button 
-            className="md:hidden text-primary p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          >
-            {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
+          <div className="md:hidden flex items-center gap-1">
+            <button
+              onClick={toggleTheme}
+              aria-label={themeMode === 'dark' ? 'Cambiar a modo día' : 'Cambiar a modo noche'}
+              className="text-primary p-2"
+            >
+              {themeMode === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+            </button>
+            <button 
+              className="text-primary p-2"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu */}
@@ -190,7 +223,7 @@ export default function App() {
       </main>
 
       {/* Footer */}
-      <footer className="w-full py-12 px-6 md:px-12 lg:px-24 bg-surface-container-lowest border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-8 relative z-30">
+      <footer className="site-footer w-full py-12 px-6 md:px-12 lg:px-24 bg-surface-container-lowest border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-8 relative z-30">
         <div className="w-full md:w-auto flex justify-center md:justify-start">
           <img
             src={logoFooter}

@@ -123,7 +123,7 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
             <div className="absolute bottom-0 left-0 right-0 p-5">
               <p className="text-primary text-xs font-bold uppercase tracking-[0.18em] mb-2">Historia viva</p>
-              <p className="text-on-surface font-serif text-xl leading-tight">Somos la musica de tus historias, de tus logros y tus momentos.</p>
+              <p className="text-white font-serif text-xl leading-tight">Somos la musica de tus historias, de tus logros y tus momentos.</p>
             </div>
           </div>
 
@@ -163,8 +163,8 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
             <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8">
               <span className="border border-primary text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest px-3 py-1 rounded-full mb-3 sm:mb-4 inline-block">Video Destacado</span>
               <span className="sm:hidden block text-[10px] uppercase tracking-[0.2em] text-primary mb-2 font-bold">Toca para reproducir</span>
-              <h3 className="font-serif text-xl sm:text-2xl md:text-4xl leading-tight text-on-surface mb-2">Mariachi Internacional Cielito Lindo</h3>
-              <p className="text-xs sm:text-sm md:text-base leading-snug sm:leading-normal text-on-surface-variant max-w-xl">Comparte con nosotros nuestros recuerdos mas simbolicos junto a ustedes.</p>
+              <h3 className="font-serif text-xl sm:text-2xl md:text-4xl leading-tight text-white mb-2">Mariachi Internacional Cielito Lindo</h3>
+              <p className="text-xs sm:text-sm md:text-base leading-snug sm:leading-normal text-white/85 max-w-xl">Comparte con nosotros nuestros recuerdos mas simbolicos junto a ustedes.</p>
             </div>
           </div>
 
@@ -248,11 +248,11 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
 
                 <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 text-left">
                   <p className="text-primary text-xs md:text-sm uppercase tracking-[0.18em] mb-2 font-bold">Galería en vivo</p>
-                  <p className="text-on-surface text-xl md:text-3xl font-serif">{PHOTO_SLIDES[activePhoto].title}</p>
-                  <p className="text-on-surface-variant text-sm md:text-base mt-1">{PHOTO_SLIDES[activePhoto].subtitle}</p>
+                  <p className="text-white text-xl md:text-3xl font-serif">{PHOTO_SLIDES[activePhoto].title}</p>
+                  <p className="text-white/85 text-sm md:text-base mt-1">{PHOTO_SLIDES[activePhoto].subtitle}</p>
                 </div>
 
-                <div className="absolute top-4 right-4 bg-black/45 text-on-surface text-xs md:text-sm px-3 py-1.5 rounded-full border border-white/20">
+                <div className="absolute top-4 right-4 bg-black/45 text-white text-xs md:text-sm px-3 py-1.5 rounded-full border border-white/20">
                   {activePhoto + 1} / {totalPhotos}
                 </div>
 
@@ -271,7 +271,7 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
                     <img src={photo.src} alt={photo.subtitle} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" loading="lazy" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/55 to-transparent" />
                     <div className="absolute bottom-2 left-2 right-2 text-left">
-                      <p className="text-on-surface text-xs md:text-sm font-semibold truncate">{photo.subtitle}</p>
+                      <p className="text-white text-xs md:text-sm font-semibold truncate">{photo.subtitle}</p>
                     </div>
                   </button>
                 ))}

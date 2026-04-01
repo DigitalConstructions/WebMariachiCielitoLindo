@@ -84,8 +84,8 @@ export const AboutView = ({ setView }: { setView: (v: ViewState) => void, key?: 
 
             <div>
               <span className="text-primary font-bold tracking-[0.2em] text-4xl md:text-5xl mb-4 block uppercase">Nuestra Historia</span>
-              <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight text-on-surface">Cómo Nació Cielito Lindo</h2>
-              <div className="space-y-5 text-on-surface font-light text-lg md:text-xl leading-relaxed">
+              <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight text-white">Cómo Nació Cielito Lindo</h2>
+              <div className="space-y-5 text-white/90 font-light text-lg md:text-xl leading-relaxed">
                 <p>Mariachi Internacional Cielito Lindo nace como una inspiración musical de la Lcda. Paola Madero, quien ya contaba con trayectoria como violinista en otras agrupaciones de Mariachi de la ciudad de Guayaquil.</p>
                 <p>Desde sus inicios, el proyecto fue concebido para recrear los mejores momentos de la música mexicana e internacional, brindando prestancia, alegría y vitalidad en cada actuación.</p>
                 <p>A través de los años, la agrupación ha recorrido diversos escenarios y se ha consolidado como un referente artístico por su calidad vocal, su ejecución instrumental y su presencia escénica.</p>
@@ -164,7 +164,7 @@ export const ContactView = () => {
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-14 relative z-10 w-full">
         <div className="w-full flex justify-center lg:justify-start">
-          <h2 className="font-serif text-center lg:text-left text-[5.5rem] md:text-[8rem] lg:text-[11rem] leading-[0.82] tracking-[-0.04em] text-on-surface drop-shadow-[0_4px_22px_rgba(0,0,0,0.8)] max-w-none">
+          <h2 className="font-serif text-center lg:text-left text-[5.5rem] md:text-[8rem] lg:text-[11rem] leading-[0.82] tracking-[-0.04em] text-white drop-shadow-[0_4px_22px_rgba(0,0,0,0.8)] max-w-none">
             Agende una <br />
             <span className="text-primary italic">Experiencia</span>
           </h2>
@@ -176,15 +176,15 @@ export const ContactView = () => {
               <div className="flex items-start gap-3 md:gap-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0 rounded-full"><Phone size={18} className="md:w-5 md:h-5" /></div>
                 <div>
-                  <p className="text-xs text-on-surface-variant uppercase tracking-widest mb-2 md:mb-3 font-bold">Teléfonos</p>
+                  <p className="text-xs text-white/70 uppercase tracking-widest mb-2 md:mb-3 font-bold">Teléfonos</p>
                   <div className="space-y-1 md:space-y-2">
                     <div>
-                      <p className="text-xs text-on-surface-variant mb-0.5 md:mb-1">Llamadas:</p>
-                      <p className="text-base md:text-lg font-medium text-on-surface">0992882624</p>
+                      <p className="text-xs text-white/65 mb-0.5 md:mb-1">Llamadas:</p>
+                      <p className="text-base md:text-lg font-medium text-white">0992882624</p>
                     </div>
                     <div>
-                      <p className="text-xs text-on-surface-variant mb-0.5 md:mb-1">WhatsApp y llamadas:</p>
-                      <p className="text-base md:text-lg font-medium text-on-surface">0987216439</p>
+                      <p className="text-xs text-white/65 mb-0.5 md:mb-1">WhatsApp y llamadas:</p>
+                      <p className="text-base md:text-lg font-medium text-white">0987216439</p>
                     </div>
                   </div>
                 </div>
@@ -192,22 +192,22 @@ export const ContactView = () => {
               <div className="flex items-start gap-3 md:gap-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0 rounded-full"><Mail size={18} className="md:w-5 md:h-5" /></div>
                   <div>
-                    <p className="text-xs text-on-surface-variant uppercase tracking-widest mb-2 md:mb-2 font-bold">Correo Electrónico</p>
-                    <p className="text-xs sm:text-sm md:text-lg lg:text-xl font-medium text-on-surface leading-tight break-normal">
+                    <p className="text-xs text-white/70 uppercase tracking-widest mb-2 md:mb-2 font-bold">Correo Electrónico</p>
+                    <p className="text-xs sm:text-sm md:text-lg lg:text-xl font-medium text-white leading-tight break-normal">
                       mariachicielitolindoecuador<wbr />@gmail.com
                     </p>
                   </div>
               </div>
               <div className="flex items-start gap-3 md:gap-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0 rounded-full"><MapPin size={18} className="md:w-5 md:h-5" /></div>
-                <div><p className="text-xs text-on-surface-variant uppercase tracking-widest mb-2 md:mb-2 font-bold">Ubicación</p><p className="text-base md:text-xl font-medium text-on-surface">Cdla. Bolivariana Mz. I VILLA 4<br />Guayaquil – Ecuador.</p></div>
+                <div><p className="text-xs text-white/70 uppercase tracking-widest mb-2 md:mb-2 font-bold">Ubicación</p><p className="text-base md:text-xl font-medium text-white">Cdla. Bolivariana Mz. I VILLA 4<br />Guayaquil – Ecuador.</p></div>
               </div>
             </div>
           </div>
 
           <div className="bg-surface/70 backdrop-blur-md p-10 md:p-14 border border-outline-variant/10 ambient-shadow rounded-3xl text-center">
-            <h3 className="font-serif text-3xl mb-4 text-on-surface">Cotiza por WhatsApp</h3>
-            <p className="text-on-surface-variant mb-8">Escríbenos directamente y te ayudamos a reservar la mejor serenata para tu evento.</p>
+            <h3 className="font-serif text-3xl mb-4 text-white">Cotiza por WhatsApp</h3>
+            <p className="text-white/75 mb-8">Escríbenos directamente y te ayudamos a reservar la mejor serenata para tu evento.</p>
             <a
               href="https://api.whatsapp.com/send/?phone=593987216439&text=%21Buen+d%C3%ADa%21+Deseo+la+mejor+serenata+de+Guayaquil%21&type=phone_number&app_absent=0"
               target="_blank"
@@ -221,7 +221,7 @@ export const ContactView = () => {
 
         <div className="bg-surface/70 backdrop-blur-md border border-outline-variant/10 rounded-3xl p-6 md:p-8 ambient-shadow overflow-hidden">
           <div className="flex items-center mb-5">
-            <h3 className="font-serif text-2xl md:text-3xl text-on-surface">Formas de Pago</h3>
+            <h3 className="font-serif text-2xl md:text-3xl text-white">Formas de Pago</h3>
           </div>
 
           <div className="relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest py-5">
