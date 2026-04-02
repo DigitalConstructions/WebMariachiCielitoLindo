@@ -6,11 +6,24 @@ import { HomeView, AboutView, ContactView } from './components/BasicViews';
 import GalleryView from './components/GalleryView';
 import RepertoireView from './components/RepertoireView';
 import AdminView from './components/AdminView';
-import { Toaster } from 'react-hot-toast';
+import { Toaster, toast } from 'react-hot-toast';
 import logoMain from '../medios/logos/logo.svg';
 import logoMobile from '../medios/logos/logmovil.svg';
 import logoHeader from '../medios/logos/logo_head_foot.png';
 import logoFooter from '../medios/logos/logo_head_foot_gra.png';
+
+const BACKGROUND_PLAYLIST = [
+  { title: "Cielito Lindo", artist: "Quirino Mendoza y Cortés", url: "/canciones/Cielito%20Lindo.mp3" },
+  { title: "El Mariachi Loco", artist: "Román Palomar", url: "/canciones/El%20Mariachi%20Loco.mp3" },
+  { title: "Guadalajara", artist: "Pepe Guízar", url: "/canciones/Guadalajara_Mariachi_letra%20original_letra_lyrics.mp3" },
+  { title: "Jarabe Tapatío", artist: "Jesús González Rubio", url: "/canciones/Jarabe%20tapat%C3%ADo.mp3" },
+  { title: "Jesusita en Chihuahua", artist: "Quirino Mendoza y Cortés", url: "/canciones/Jesusita%20En%20Chihuahua%20by%20Mariachi%20Mexico.mp3" },
+  { title: "La Bikina", artist: "Rubén Fuentes", url: "/canciones/LA%20BIKINA%20MARIACHI%20VARGAS%20DE%20TECALITLAN.mp3" },
+  { title: "Sabes Una Cosa", artist: "Luis Miguel", url: "/canciones/La%20hija%20del%20mariachi%20%20-%20Sabes%20Una%20cosa.%20CD2.mp3" },
+  { title: "El Son de la Negra", artist: "Blas Galindo", url: "/canciones/Mariachi%20Vargas%20%20%20Son%20de%20la%20negra.mp3" },
+  { title: "El Aventurero", artist: "Pedro Fernández", url: "/canciones/Pedro%20Fern%C3%A1ndez%20El%20Aventurero%20Letra.mp3" },
+  { title: "Hermoso Cariño", artist: "Vicente Fernández", url: "/canciones/Vicente%20Fern%C3%A1ndez%20Hermoso%20Cari%C3%B1o%20Oficial%20En%20Vivo.mp3" }
+];
 
 export default function App() {
   type ThemeMode = 'light' | 'dark';
@@ -18,6 +31,7 @@ export default function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [currentTrackIndex, setCurrentTrackIndex] = useState(() => Math.floor(Math.random() * BACKGROUND_PLAYLIST.length));
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
     const savedTheme = window.localStorage.getItem('wmcl-theme');
@@ -33,6 +47,13 @@ export default function App() {
     window.localStorage.setItem('wmcl-theme', themeMode);
   }, [themeMode]);
 
+  // Set initial audio volume
+  useEffect(() => {
+    if (audioRef.current) {
+      audioRef.current.volume = 0.1;
+    }
+  }, []);
+
   // Handle global click for autoplay
   useEffect(() => {
     const handleInteraction = () => {
@@ -40,6 +61,7 @@ export default function App() {
         audioRef.current.play().then(() => {
           setIsPlaying(true);
           setHasInteracted(true);
+          showNowPlayingToast(currentTrackIndex);
         }).catch(err => console.error("Audio playback failed:", err));
       }
     };
@@ -55,6 +77,9 @@ export default function App() {
         audioRef.current.pause();
       } else {
         audioRef.current.play();
+        if (hasInteracted) {
+          showNowPlayingToast(currentTrackIndex);
+        }
       }
       setIsPlaying(!isPlaying);
     }
@@ -86,13 +111,47 @@ export default function App() {
     setThemeMode((prev) => (prev === 'dark' ? 'light' : 'dark'));
   };
 
+  const handleTrackEnd = () => {
+    const nextIndex = Math.floor(Math.random() * BACKGROUND_PLAYLIST.length);
+    setCurrentTrackIndex(nextIndex);
+  };
+
+  const showNowPlayingToast = (index: number) => {
+    const track = BACKGROUND_PLAYLIST[index];
+    toast.success(
+      <span>
+        Reproduciendo:<br/>
+        <strong className="font-bold">{track.title}</strong> - <em className="italic opacity-80">{track.artist}</em>
+      </span>, 
+      {
+        icon: '🎵',
+        style: {
+          borderRadius: '10px',
+          background: 'var(--color-surface-container-low)',
+          color: 'var(--color-on-surface)',
+          border: '1px solid var(--color-primary)',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.1)'
+        },
+      }
+    );
+  };
+
+  // Automatically play when track changes (if user was already playing)
+  useEffect(() => {
+    if (isPlaying && audioRef.current) {
+      audioRef.current.play().then(() => {
+        showNowPlayingToast(currentTrackIndex);
+      }).catch(console.error);
+    }
+  }, [currentTrackIndex]);
+
   return (    <>
-      <Toaster position="bottom-right" toastOptions={{ duration: 4000 }} />    <div className="min-h-screen relative overflow-hidden bg-surface">
+      <Toaster position="top-right" toastOptions={{ duration: 4000 }} />    <div className="min-h-screen relative overflow-hidden bg-surface">
       {/* Audio Element */}
       <audio 
         ref={audioRef} 
-        src="https://archive.org/download/TraditionalMexicanMariachi/104-MariachiTapatioDeJoseMarmolejo-LaNegra.mp3" 
-        loop 
+        src={BACKGROUND_PLAYLIST[currentTrackIndex].url}
+        onEnded={handleTrackEnd}
       />
 
       {/* Floating Audio Controls */}
