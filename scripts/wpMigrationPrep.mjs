@@ -56,11 +56,17 @@ function extractMegaUrl(text = '') {
   return match ? match[1].trim() : '';
 }
 
+function extractYoutubeUrl(text = '') {
+  const ytRegex = /(https?:\/\/(?:www\.)?(?:youtube\.com\/(?:watch\?v=|shorts\/|embed\/)|youtu\.be\/)[^\s"'<>\])]+)/i;
+  const match = String(text).match(ytRegex);
+  return match ? match[1].trim() : '';
+}
+
 async function fetchJson(url) {
   const response = await fetch(url, {
     headers: {
       Accept: 'application/json',
-      'User-Agent': 'WMCL-Migration-Prep/1.0',
+      'User-Agent': 'WMCL-Migration-Prep/2.0',
     },
   });
 
@@ -114,7 +120,7 @@ async function extractMegaFromPublicPage(url) {
     const response = await fetch(url, {
       headers: {
         Accept: 'text/html',
-        'User-Agent': 'WMCL-Migration-Prep/1.0',
+        'User-Agent': 'WMCL-Migration-Prep/2.0',
       },
     });
     if (!response.ok) return '';
@@ -142,6 +148,7 @@ async function main() {
 
   const normalized = [];
   let withMega = 0;
+  let withYoutube = 0;
 
   for (const item of songsRaw) {
     const title = normalizeText(item?.title?.rendered || '');
@@ -149,18 +156,22 @@ async function main() {
     const genres = getTaxNames(item?.genero, genreMap);
     const occasions = getTaxNames(item?.ocaciones, occasionMap);
 
-    // Try to detect Mega link in common places from API payload.
     let megaUrl = '';
     megaUrl ||= extractMegaUrl(JSON.stringify(item?.acf || {}));
     megaUrl ||= extractMegaUrl(item?.content?.rendered || '');
     megaUrl ||= extractMegaUrl(item?.excerpt?.rendered || '');
 
-    // Optional: inspect public post HTML to find Mega URL.
+    let youtubeUrl = '';
+    youtubeUrl ||= extractYoutubeUrl(JSON.stringify(item?.acf || {}));
+    youtubeUrl ||= extractYoutubeUrl(item?.content?.rendered || '');
+    youtubeUrl ||= extractYoutubeUrl(item?.excerpt?.rendered || '');
+
     if (!megaUrl && args.scanPages && item?.link) {
       megaUrl = await extractMegaFromPublicPage(item.link);
     }
 
     if (megaUrl) withMega += 1;
+    if (youtubeUrl) withYoutube += 1;
 
     normalized.push({
       source: 'wordpress',
@@ -172,8 +183,14 @@ async function main() {
       genres,
       occasions,
       megaUrl,
-      youtubeUrl: '',
-      dots: 3,
+      youtubeUrl,
+      reviewFlags: {
+        missingArtist: !artists[0],
+        missingGenres: genres.length === 0,
+        missingOccasions: occasions.length === 0,
+        missingYoutube: !youtubeUrl,
+        missingMega: !megaUrl,
+      },
     });
   }
 
@@ -189,6 +206,8 @@ async function main() {
           totalSongs: normalized.length,
           songsWithMega: withMega,
           songsWithoutMega: normalized.length - withMega,
+          songsWithYoutube: withYoutube,
+          songsWithoutYoutube: normalized.length - withYoutube,
           scanPages: args.scanPages,
         },
         songs: normalized,
@@ -201,6 +220,8 @@ async function main() {
   console.log(`Done. Exported ${normalized.length} songs.`);
   console.log(`With Mega URL: ${withMega}`);
   console.log(`Without Mega URL: ${normalized.length - withMega}`);
+  console.log(`With YouTube URL: ${withYoutube}`);
+  console.log(`Without YouTube URL: ${normalized.length - withYoutube}`);
   console.log(`Output: ${outputPath}`);
 }
 

@@ -5,9 +5,16 @@
     "totalSongs": 255,
     "songsWithMega": 0,
     "songsWithoutMega": 255,
-    "songsWithYoutube": 0,
-    "songsWithoutYoutube": 255,
-    "scanPages": false
+    "songsWithYoutube": 255,
+    "songsWithoutYoutube": 0,
+    "scanPages": false,
+    "enrichedAt": "2026-04-02T05:13:01.655Z",
+    "inputPath": "D:\\Moises\\Documents\\DESARROLLOS PROFESIONALES\\MARIACHI CIELITO LINDO\\WMCL_Prototipe\\data\\wp-songs-normalized.json",
+    "rulesPath": "D:\\Moises\\Documents\\DESARROLLOS PROFESIONALES\\MARIACHI CIELITO LINDO\\WMCL_Prototipe\\data\\wp-enrichment-rules.json",
+    "fixedYoutube": 255,
+    "fixedGenres": 0,
+    "fixedOccasions": 0,
+    "pendingCount": 14
   },
   "songs": [
     {
@@ -15,23 +22,27 @@
       "sourceId": 5182,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mi-viejo/",
       "title": "Mi Viejo",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del Padre"
+        "Día del Padre",
+        "Funerales",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mD0ZJ25p8xU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -45,18 +56,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del Padre"
+        "Día del Padre",
+        "Graduaciones",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=b0S-QoZtWFE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -70,18 +84,23 @@
         "Marco Antonio Solís"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Pop",
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=F3zH7YcWkUo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -90,24 +109,26 @@
       "sourceId": 5174,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/yo-soy-el-aventurero/",
       "title": "Yo soy el aventurero",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Son"
+        "Ranchera",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Fiesta Mexicana",
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=l3ubxwgAnt0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -119,19 +140,21 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Ranchera",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Fiesta Mexicana",
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=edWBHRWF85M",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -145,18 +168,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Son"
+        "Son Jalisciense",
+        "Ranchera",
+        "Instrumental"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ewzNHwA_cUM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -170,18 +196,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Serenata",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cLzgxtSE-xk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -190,23 +219,26 @@
       "sourceId": 5170,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/dulce-pecado/",
       "title": "Dulce pecado",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=-b2a8As6Skc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -220,18 +252,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Paso Doble",
+        "Instrumental"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HYscCAbhzaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -245,18 +279,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Son Jalisciense",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JGHBHYeOTCE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -270,18 +306,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Polka",
+        "Instrumental"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XoJPNzRUZzY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -293,18 +332,22 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Show Bailable"
+        "Serenata",
+        "Bodas",
+        "Quinceañeras",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=n_guCfn2pDU",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -316,18 +359,20 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Pasillo",
+        "Balada"
       ],
       "occasions": [
-        "Show Bailable"
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gBtM4_NcKTc",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -339,18 +384,20 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Ranchera"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BkobG2dNe_s",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -362,18 +409,20 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Pasillo",
+        "Vals Ranchero"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=GwtvGAy-JQM",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -385,18 +434,21 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Bolero",
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Show Bailable"
+        "Despecho",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=m5PgVv8PkfA",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -408,18 +460,23 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Show Bailable"
+        "Día del Padre",
+        "Día de la Madre",
+        "Funerales",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Mdmo66psfqQ",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -431,18 +488,23 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Pasillo"
       ],
       "occasions": [
-        "Velorios"
+        "Día del Padre",
+        "Día de la Madre",
+        "Funerales",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EnYWG3r3QBY",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -456,18 +518,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Salsa",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -481,18 +545,22 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Pop",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Cumpleaños",
+        "Quinceañeras",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=6ys9Fj41B28",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -506,18 +574,21 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Salsa",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2F2IG-Xl0aE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -531,18 +602,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Salsa",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=G1Dc3gRBbQo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -556,18 +629,21 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Salsa",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=tVmDML_vglE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -581,18 +657,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Salsa",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cRvNRq0TeEo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -606,18 +684,21 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Balada",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=bXehP6Fl0Z0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -631,18 +712,21 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Merengue",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=01nejZdkSck",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -656,18 +740,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Salsa"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3pg-LexET2w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -681,18 +767,22 @@
         "Lucero"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Ranchera",
+        "Pop"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=5OkQ3pZPLbQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -706,18 +796,23 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Cumbias"
+        "Pop",
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Show Bailable"
+        "Despecho",
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=E2ju80kPIFg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -731,19 +826,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Cumbias"
+        "Son Jalisciense",
+        "Ranchera",
+        "Instrumental"
       ],
       "occasions": [
-        "Fiesta Mexicana",
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CQ_gkzGR1eY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -757,18 +855,19 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=kZFtBWhQpcE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -782,18 +881,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Son Jarocho",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -807,18 +908,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Pop",
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2XsWAoNcrFY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -832,18 +935,21 @@
         "Lucero"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Ranchera"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=LZKXu-6ln3k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -857,18 +963,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Instrumental",
+        "Paso Doble"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -882,18 +990,19 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2XsWAoNcrFY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -907,18 +1016,20 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Son"
       ],
       "occasions": [
-        "Show Bailable"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=U9XuqYLDIlY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -927,24 +1038,25 @@
       "sourceId": 5139,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/no-me-se-rajar/",
       "title": "No me se rajar",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del Padre",
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=mHL6rpmxQRg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -958,18 +1070,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EjjDxPBf17o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -983,19 +1098,22 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Dia de la Madre",
-        "Fiesta Mexicana"
+        "Serenata",
+        "Día de la Madre",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=e89CusQvtq4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1009,19 +1127,22 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Fiesta Mexicana",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Mu0_5AM2ETY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1035,18 +1156,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=i_jY0T-G0js",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1060,18 +1182,20 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oFtP7PUyYoI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1085,18 +1209,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Y5Zmj21S5UU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1105,23 +1231,25 @@
       "sourceId": 5131,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/la-ley-del-monte/",
       "title": "La ley del monte",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Byeu5C9FS6s",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1135,18 +1263,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Son Jalisciense",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=52tADzXm6sM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1160,18 +1290,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Corrido"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Despecho",
+        "Serenata",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=IiNWdxtBjO4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1185,18 +1318,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Corrido"
+        "Son Jalisciense",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=D34D_zUUdKs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1210,18 +1346,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Corrido"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3t-TP4Gq0rc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1235,18 +1374,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JxNzAHuywsc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1260,18 +1400,20 @@
         "Ana Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Lhk7EI88BRE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1285,18 +1427,20 @@
         "Ana Gabriel"
       ],
       "genres": [
+        "Balada",
         "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=F07ngnis2ig",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1310,18 +1454,21 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Ranchera"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=IbWM2jivMiI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1335,18 +1482,21 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
+        "Serenata",
+        "Fiestas",
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ga5Bo4YdgH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1360,20 +1510,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Despecho",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sNXQ36JqCiU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1382,24 +1532,25 @@
       "sourceId": 5120,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/pa-todo-el-ano/",
       "title": "Pa todo el año",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
         "Ranchera"
       ],
       "occasions": [
         "Despecho",
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ndkXxNTEIA4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1408,23 +1559,26 @@
       "sourceId": 5119,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/volver-volver/",
       "title": "Volver volver",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
         "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Despecho",
+        "Fiestas",
+        "Serenata",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gZVKe_0n7tg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1438,18 +1592,20 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
+        "Serenata",
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=g5rsnxJWNkM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1458,23 +1614,24 @@
       "sourceId": 5117,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/aunque-no-sea-mayo/",
       "title": "Aunque no sea mayo",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Serenata",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CIXWJpV_4kc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1488,18 +1645,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Danzón"
       ],
       "occasions": [
-        "Recibimiento"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pOi9LLVcFBo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1508,23 +1667,25 @@
       "sourceId": 5115,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/el-ausente/",
       "title": "El ausente",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oZCHFXxkoQc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1538,18 +1699,20 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Cumbias"
+        "Bolero"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Despecho",
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uar9rLs4x5c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1561,18 +1724,22 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Cumbias"
+        "Pasillo",
+        "Balada",
+        "Instrumental"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Graduaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9j4mB5nu_dk",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1586,19 +1753,22 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yt8Ki-RSIyA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1612,18 +1782,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZbIszWyLuaI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1637,18 +1810,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Huapango"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=bc88kfQJoq0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1662,18 +1838,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Cumpleaños",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BVJ9kKkn-os",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1687,18 +1866,19 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Bolero"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=RVY0WNq_EEM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1712,18 +1892,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Cumbias"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Wxl0B7HGSHg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1732,25 +1915,25 @@
       "sourceId": 5106,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/ay-chavela/",
       "title": "Ay Chavela",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños",
-        "Fiesta Mexicana",
-        "Quinceañeras"
+        "Fiestas",
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=COMY2Kr6Lq4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1764,18 +1947,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=fKd8AxqQiZc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1784,23 +1971,26 @@
       "sourceId": 5104,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/canto-a-la-madre/",
       "title": "Canto a la madre",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UZTiHZ_TLCY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1814,18 +2004,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=euJNFdOhP8M",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1834,25 +2027,27 @@
       "sourceId": 5102,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/a-mi-manera/",
       "title": "A mi manera",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Cumpleaños",
-        "Dia del Padre",
-        "Velorios"
+        "Fiestas",
+        "Graduaciones",
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9F_BRjGi3L8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1866,18 +2061,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Serenata",
+        "Cumpleaños",
+        "Fiestas",
+        "Bodas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3ql5nFBfyjQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1886,24 +2085,27 @@
       "sourceId": 5100,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/a-la-sombra-de-mi-madre/",
       "title": "A la sombra de mi madre",
-      "artist": "Leodan",
+      "artist": "Leo Dan",
       "artists": [
-        "Leodan"
+        "Leo Dan"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pasillo"
       ],
       "occasions": [
+        "Día de la Madre",
         "Cumpleaños",
-        "Dia de la Madre"
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8iJd52xfLa0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1917,18 +2119,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Día de la Madre",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cVjDGRzj1iE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1942,18 +2146,18 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gz66PdmG_ho",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1967,18 +2171,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9GLFNM7KgwA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1992,18 +2197,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jIGKzn3Y4Es",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2020,15 +2226,17 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9J9YxWNXS4c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2042,18 +2250,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Día de la Madre",
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HGu_gYWrk1I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2070,15 +2281,16 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=T4JK8WL8DcM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2095,15 +2307,17 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=R6af2FxljeQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2117,18 +2331,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uQc2-baHAUM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2142,18 +2357,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Clásico"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso",
+        "Bodas",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EsL6T5pSfTk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2170,15 +2388,15 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rdUy6x38yYg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2195,15 +2413,15 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Q1DJgt4mc_I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2220,15 +2438,15 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cVjDGRzj1iE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2242,18 +2460,18 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vCnFS0NvgaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2267,18 +2485,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZoruoNdPJuk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2292,18 +2513,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=t4qKItDVyKI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2317,18 +2539,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=hiTaP1aYMyw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2342,18 +2566,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Ambientación",
+        "Graduaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=hVl2L_i0duk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2367,18 +2593,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso",
+        "Día de la Madre",
+        "Bodas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EWx2-6FxREA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2392,19 +2621,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana",
-        "Quinceañeras"
+        "Religioso",
+        "Día de la Madre",
+        "Día del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9PpKK50tsaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2418,18 +2649,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Ranchera",
+        "Vals Ranchero",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Bodas",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=z50c2Kuyorc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2443,18 +2677,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pv3M9E7U1U8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2463,23 +2698,25 @@
       "sourceId": 5077,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/jesus-es-mi-pastor/",
       "title": "Jesús es mi pastor",
-      "artist": "Leodan",
+      "artist": "Leo Dan",
       "artists": [
-        "Leodan"
+        "Leo Dan"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NJFesiSX7WE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2493,18 +2730,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Alabanza"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rdUy6x38yYg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2518,18 +2756,21 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Pasillo"
+        "Pasillo",
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=0vJHbkKTNGM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2543,18 +2784,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=O0OcHIUjRnk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2563,24 +2807,26 @@
       "sourceId": 5073,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/sin-verte/",
       "title": "Sin verte",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
         "Despecho",
-        "Velorios"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=H9ivAZdrF-8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2594,18 +2840,21 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Corrido"
+        "Bolero",
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XrhoIdH07JI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2619,19 +2868,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
+        "Serenata",
         "Despecho",
-        "Velorios"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZTPVeup5UFk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2645,18 +2896,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cZvPJoOMKB4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2665,23 +2918,26 @@
       "sourceId": 5069,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/el-rey/",
       "title": "El rey",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños"
+        "Fiestas",
+        "Cumpleaños",
+        "Ambientación",
+        "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=U6qMQnNst9U",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2695,19 +2951,22 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Pasillo"
+        "Bolero",
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre",
-        "Velorios"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rGJ4TfuFAKg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2721,19 +2980,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
+        "Serenata",
         "Despecho",
-        "Velorios"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yBA1qn-fBOM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2747,18 +3008,21 @@
         "Marco Antonio Solís"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Graduaciones",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EBcaFpHJPZI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2772,18 +3036,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HHQp--3AB04",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2797,18 +3063,19 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MDin4E_Jv2k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2822,21 +3089,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
         "Despecho",
-        "Reconciliaciones",
-        "Serenata Romántica",
-        "Velorios"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MXlwuZ_nEk0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2850,18 +3117,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Velorios"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Cg5Y7MP00Ko",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2875,18 +3145,22 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Funerales",
+        "Día de la Madre",
+        "Ambientación",
+        "Bodas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=7XAUNqTOQx8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2900,23 +3174,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Celebración Cristiana",
         "Cumpleaños",
-        "Dia del amor y amistad",
-        "Quinceañeras",
-        "Serenata Romántica"
+        "Fiestas",
+        "Graduaciones",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=VZcW5TTa5Rw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2930,18 +3203,20 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Funerales",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=a9QwsJSVYaw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2955,18 +3230,22 @@
         "Marco Antonio Solís"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop",
+        "Ranchera"
       ],
       "occasions": [
-        "Velorios"
+        "Despecho",
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gH8oCh1nn88",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2977,24 +3256,24 @@
       "title": "Perdón",
       "artist": "Alejandro Fernández",
       "artists": [
-        "Alejandro Fernández",
-        "Vicente Fernandez"
+        "Alejandro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Reconciliaciones",
-        "Serenata Romántica",
-        "Velorios"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=QPPICVq6-zU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3008,22 +3287,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Cumbias"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
         "Cumpleaños",
-        "Dia del amor y amistad",
-        "Quinceañeras",
-        "Serenata Romántica"
+        "Graduaciones",
+        "Religioso",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=spfPclyGvw8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3037,19 +3316,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=OhBVX1WbO84",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3063,19 +3344,23 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Día del Padre",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9se9qM30NKI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3089,19 +3374,21 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
+        "Día de la Madre",
         "Cumpleaños",
-        "Quinceañeras"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jcH4hL0LVn8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3115,19 +3402,21 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Balada"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qZVGDRXzaYo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3136,24 +3425,26 @@
       "sourceId": 5051,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/quinceanera/",
       "title": "Quinceañera",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Balada"
+        "Ranchera",
+        "Vals Ranchero"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rYclZ_Y0rH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3162,24 +3453,28 @@
       "sourceId": 5049,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mi-nina-bonita/",
       "title": "Mi niña bonita",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Día del Padre",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1npHMXZfmbY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3193,19 +3488,20 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños",
-        "Quinceañeras"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=R12yfnab-ZQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3219,21 +3515,24 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños",
         "Quinceañeras",
-        "Serenata Romántica"
+        "Bodas",
+        "Graduaciones",
+        "Día del Padre",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Y59yDvPBSBU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3242,24 +3541,26 @@
       "sourceId": 5046,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/quince-primaveras/",
       "title": "Quince primaveras",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Vals Ranchero"
       ],
       "occasions": [
+        "Quinceañeras",
         "Cumpleaños",
-        "Quinceañeras"
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rYclZ_Y0rH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3273,21 +3574,22 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_tNVEhSelH0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3301,21 +3603,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Son Jalisciense"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9J9YxWNXS4c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3329,21 +3631,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JTSPKPpSD_Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3357,19 +3659,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ifnioi8O9ts",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3383,18 +3687,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
-        "Reconciliaciones"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=balFKWqXuT0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3408,20 +3714,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
         "Despecho",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JAsh24K3GU4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3435,19 +3742,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
-        "Despecho",
-        "Reconciliaciones"
+        "Serenata",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=95tpywDJQJM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3461,21 +3770,21 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=TJYLncp33EY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3489,18 +3798,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=areQzt6pRkk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3514,21 +3825,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WR8hx7u2xWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3537,23 +3847,26 @@
       "sourceId": 5035,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/te-he-prometido/",
       "title": "Te he prometido",
-      "artist": "Leodan",
+      "artist": "Leo Dan",
       "artists": [
-        "Leodan"
+        "Leo Dan"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sRXQH4rZrUA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3567,21 +3880,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WR8hx7u2xWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3595,21 +3907,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XKP46zd8tqc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3623,18 +3934,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Serenata",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UasiMOoMz1o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3648,21 +3961,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uAYqCRIc2IA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3671,26 +3983,26 @@
       "sourceId": 5030,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/sin-ti/",
       "title": "Sin ti",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Despecho",
+        "Serenata",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=O3qRy6KJGNU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3704,21 +4016,20 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vjb39UwDDIo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3732,21 +4043,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Huapango"
+        "Huapango",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=y-6Rp1GCY1w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3760,21 +4071,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Día de la Madre",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=eJpMOYIK6SA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3788,21 +4099,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HLQtHVkCtms",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3816,21 +4126,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cNo-d6Y6w8Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3844,21 +4153,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Son"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UuGrc3vvdMw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3872,21 +4180,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gZL7Tqov0w0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3900,21 +4207,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=E8kPtvFYgq0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3928,21 +4234,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XOGcTmOoulY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3956,21 +4261,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=KSVItZyo_l0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3984,21 +4289,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3sboBltg_wM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4012,21 +4316,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Balada"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Bodas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=giAE7Yz7gHI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4040,21 +4343,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=x3lryVwGKJA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4063,26 +4365,26 @@
       "sourceId": 5016,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/pideme-la-luna/",
       "title": "Pídeme la luna",
-      "artist": "Leodan",
+      "artist": "Leo Dan",
       "artists": [
-        "Leodan"
+        "Leo Dan"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1aSc2xjtn6M",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4096,21 +4398,19 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=I_f8p0itXFw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4123,20 +4423,21 @@
       "artists": [
         "Javier Solís"
       ],
-      "genres": [],
+      "genres": [
+        "Bolero"
+      ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=up6Y-VCd1c8",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4145,25 +4446,25 @@
       "sourceId": 5013,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/para-siempre/",
       "title": "Para siempre",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Bodas",
+        "Aniversarios",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9fqPtmLAU3I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4177,21 +4478,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ppYGKtTMx8E",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4205,21 +4505,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=GuoLu1t9CmQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4233,21 +4532,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YLEDN5VB0x4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4261,21 +4559,20 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Balada"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1IewjdQMlbQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4289,21 +4586,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vILPMrC0fR0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4317,21 +4613,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NXAmH-7Tzt8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4340,26 +4635,25 @@
       "sourceId": 5006,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/motivos/",
       "title": "Motivos",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=53rcvrsB60c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4368,26 +4662,26 @@
       "sourceId": 5005,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mil-anos/",
       "title": "Mil años",
-      "artist": "Leodan",
+      "artist": "Leo Dan",
       "artists": [
-        "Leodan"
+        "Leo Dan"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_MTgyEPlwgY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4401,21 +4695,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=kneRedYAYpQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4429,21 +4722,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8Zihvn67CNI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4457,21 +4749,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rwcSw5us8Eo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4480,26 +4771,25 @@
       "sourceId": 5001,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mi-forma-de-sentir/",
       "title": "Mi forma de sentir",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Balada"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rV99-gKpeAU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4513,21 +4803,21 @@
         "Marco Antonio Solís"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9vtPruNZFHo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4536,26 +4826,25 @@
       "sourceId": 4999,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mi-companera/",
       "title": "Mi compañera",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
+        "Bodas",
         "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8ngTPP3kgKQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4564,25 +4853,26 @@
       "sourceId": 4998,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mas-que-tu-amigo/",
       "title": "Mas que tu amigo",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Cumpleaños",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NE79RDnDQ5U",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4596,22 +4886,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=387jivPcwvE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4625,21 +4913,19 @@
         "Javier Solís"
       ],
       "genres": [
-        "Balada"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9NhaC0-ecWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4653,21 +4939,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Huapango"
+        "Huapango",
+        "Instrumental"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9Z4yNNDDQok",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4681,22 +4966,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Instrumental"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EjjDxPBf17o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4710,18 +4994,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Huapango"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rxqhYXAiD88",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4735,21 +5022,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=K2mGOE65nLA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4758,26 +5045,26 @@
       "sourceId": 4991,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/lo-mucho-que-te-quiero/",
       "title": "Lo mucho que te quiero",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EcI3FALvwD0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4791,21 +5078,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Bodas",
+        "Quinceañeras",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MjisQoerYD0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4819,21 +5106,21 @@
         "Ana Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jsSwVGjj8KI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4842,26 +5129,27 @@
       "sourceId": 4988,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/la-mejor-de-todas/",
       "title": "La mejor de todas",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
+        "Ranchera",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=F5QQsWMKtaM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4875,21 +5163,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=h-GSyBwKuGE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4903,21 +5190,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qPv0KJ0Ra4w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4931,21 +5217,20 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Balada"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ODid4nY7GGY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4959,21 +5244,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=i0PKu6Yck8Q",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4987,21 +5271,21 @@
         "Ana Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BBxnW6Y18VA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5015,21 +5299,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WndFUsSXtKU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5043,24 +5327,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños",
-        "Dia del amor y amistad",
-        "Quinceañeras",
-        "Reconciliaciones",
-        "Serenata a la Virgen",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cEcWnlIdUOw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5074,18 +5355,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Xmnz6ufyn8I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5099,21 +5383,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ke1i1TjsF24",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5127,22 +5411,20 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Pasillo"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia de la Madre",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3wUeCtnAV7A",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5156,21 +5438,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=0w-F0oBE6Zs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5184,21 +5466,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1BTh5HgdEyE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5212,21 +5494,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=L3kn9Xs4Tek",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5240,18 +5522,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Balada"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Funerales",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=S1CBXrPLY-0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5265,21 +5549,22 @@
         "Lucero"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Bodas",
+        "Quinceañeras",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2DhThYPRDDI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5288,26 +5573,24 @@
       "sourceId": 4971,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/el-prendedor/",
       "title": "El prendedor",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sx31J7fDB4s",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5321,21 +5604,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero Ranchero",
+        "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=fkH8_kHFJts",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5346,25 +5628,24 @@
       "title": "El destino",
       "artist": "Juan Gabriel",
       "artists": [
-        "Juan Gabriel",
-        "Rocío Dúrcal"
+        "Juan Gabriel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gYBfhh2sVDY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5378,21 +5659,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Día de la Madre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Fvyq7-wQ7N8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5406,20 +5688,21 @@
         "Javier Solís"
       ],
       "genres": [
+        "Bolero Ranchero",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=e7_h4WNnlTU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5428,25 +5711,25 @@
       "sourceId": 4966,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/despacito/",
       "title": "Despacito",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YOyD20c9-GM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5455,23 +5738,25 @@
       "sourceId": 4965,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/de-que-manera-te-olvido/",
       "title": "De que manera te olvido",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NT0hlSpma90",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5485,20 +5770,20 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Ambientación",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JM-GcTok-7Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5512,20 +5797,21 @@
         "Alejandro Fernández"
       ],
       "genres": [
+        "Bolero",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MxoGf2uXkfQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5539,21 +5825,23 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Día de la Madre",
+        "Día del Padre",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=RyF5xuLXUXg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5567,20 +5855,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uqPERwigeoE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5594,20 +5882,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Despecho",
+        "Fiestas",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Wgo8HUyaMMM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5621,18 +5910,20 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Huapango"
+        "Ranchera"
       ],
       "occasions": [
-        "Serenata Romántica"
+        "Fiestas",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CmB7vaU337k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5646,18 +5937,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Serenata",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=x3noNiiOsEY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5671,20 +5964,19 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Despecho",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sNXQ36JqCiU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5698,20 +5990,20 @@
         "Lucero"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=KvWCkXZZfaU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5725,20 +6017,20 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=eMJZfV4RWYI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5747,25 +6039,26 @@
       "sourceId": 4953,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/besame-mucho/",
       "title": "Bésame mucho",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=95nFsh_VGEo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5779,20 +6072,22 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=wCQ3qeBfKEM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5805,19 +6100,22 @@
       "artists": [
         "Javier Solís"
       ],
-      "genres": [],
+      "genres": [
+        "Bolero"
+      ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2CCIcrGM14o",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5831,19 +6129,21 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=4vVQ-1kxppY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5852,24 +6152,26 @@
       "sourceId": 4949,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/amarte-a-la-antigua/",
       "title": "Amarte a la antigua",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Balada"
+        "Ranchera",
+        "Pop"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pifvIJ9372o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5878,24 +6180,25 @@
       "sourceId": 4948,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/amar-y-vivir/",
       "title": "Amar y vivir",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qKkmUrYAAns",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5909,19 +6212,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=n3cInnnQfr4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5935,19 +6240,22 @@
         "Natalia Jiménez"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica"
+        "Serenata",
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cTvbI7yGvdM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5956,23 +6264,26 @@
       "sourceId": 4945,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/despierta/",
       "title": "Despierta",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
-      "genres": [],
+      "genres": [
+        "Bolero",
+        "Ranchera"
+      ],
       "occasions": [
-        "Aniversarios",
+        "Serenata",
         "Cumpleaños",
-        "Serenata Romántica"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=5ar42kauTd8",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5986,18 +6297,21 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Son Jalisciense",
+        "Ranchera"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Graduaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=OHeHOb3E-2g",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6011,19 +6325,24 @@
         "Mariachi Vargas"
       ],
       "genres": [
+        "Ranchera",
+        "Bolero",
         "Balada"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños"
+        "Serenata",
+        "Cumpleaños",
+        "Día de la Madre",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YryFB27wHzs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6037,18 +6356,19 @@
         "Javier Solís"
       ],
       "genres": [
-        "Corrido"
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=s7oda7hQC0E",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6061,17 +6381,20 @@
       "artists": [
         "Mariachi Vargas"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_Hc4RUzzQlE",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6085,18 +6408,20 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Bolero"
       ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZqjkrjfIkh8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6107,17 +6432,20 @@
       "title": "Las Mañanitas",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ixZO0j_LCj4",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6128,17 +6456,20 @@
       "title": "Happy Birthday Venezolano",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Folklorico (Venezolano)"
+      ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Jguqnlymeuk",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6151,16 +6482,16 @@
       "artists": [],
       "genres": [],
       "occasions": [
-        "Celebración Cristiana",
-        "Cumpleaños"
+        "Cumpleaños",
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=wW5nce6bms0",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6171,17 +6502,20 @@
       "title": "Happy Birthday",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Instrumental"
+      ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Zh6ofSFA06M",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6195,18 +6529,22 @@
         "Natalia Jiménez"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Pop",
+        "Ranchera"
       ],
       "occasions": [
-        "Reconciliaciones"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=o6Zgwf5LX-c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6220,18 +6558,18 @@
         "Miriam Solís"
       ],
       "genres": [
-        "Alabanza"
+        "Canción Tradicional"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Religioso"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=4W53NfQrNQg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6245,18 +6583,21 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Pasillo"
+        "Pasillo",
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios"
+        "Ambientación",
+        "Serenata",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NgqbgirLj48",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6270,18 +6611,19 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JICtLiGqCV8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6290,24 +6632,26 @@
       "sourceId": 4751,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/hermoso-carino/",
       "title": "Hermoso cariño",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Cumpleaños"
+        "Serenata",
+        "Fiestas",
+        "Ambientación",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oq70h9XBj_0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6320,17 +6664,20 @@
       "artists": [
         "Francy"
       ],
-      "genres": [],
+      "genres": [
+        "Popular (Colombiana)"
+      ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Nf4GNFghEn4",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6344,18 +6691,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Son"
+        "Son Jalisciense",
+        "Instrumental"
       ],
       "occasions": [
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Bodas",
+        "Graduaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XTwmQ-R7Joc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6369,20 +6720,20 @@
         "Julio Jaramillo"
       ],
       "genres": [
-        "Boleros"
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Serenata Romántica",
-        "Velorios"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=a6w_j3xUNkg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6396,18 +6747,22 @@
         "Juan Gabriel"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Serenata",
+        "Despecho",
+        "Ambientación",
+        "Funerales"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Of3Y_IcbbuU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6421,18 +6776,21 @@
         "Lucero"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad"
+        "Serenata",
+        "Fiestas",
+        "Ambientación",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jWS7CLZn-dQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6446,21 +6804,22 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Boleros"
+        "Balada",
+        "Ranchera"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Ambientación",
+        "Día de la Madre",
+        "Día del Padre",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1xlj-zAWEfg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6474,18 +6833,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Bolero",
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños"
+        "Serenata",
+        "Despecho",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yuQku2CuIhA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6499,18 +6861,22 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Huapango"
+        "Balada",
+        "Pop",
+        "Ranchera"
       ],
       "occasions": [
-        "Dia del amor y amistad"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8Eaquhm0fCs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6519,21 +6885,25 @@
       "sourceId": 4742,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/estos-celos/",
       "title": "Estos celos",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Tsk5aLgnQJs",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6545,19 +6915,21 @@
       "artist": "",
       "artists": [],
       "genres": [
-        "Son"
+        "Huapango",
+        "Instrumental"
       ],
       "occasions": [
-        "Despecho",
-        "Fiesta Mexicana"
+        "Fiestas",
+        "Ambientación",
+        "Serenata"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NCvJwzDQTBM",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6566,24 +6938,26 @@
       "sourceId": 4651,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/yo-no-fui/",
       "title": "Yo no fui",
-      "artist": "Pedro Fernandez",
+      "artist": "Pedro Fernández",
       "artists": [
-        "Pedro Fernandez"
+        "Pedro Fernández"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbia",
+        "Ranchera"
       ],
       "occasions": [
+        "Fiestas",
         "Cumpleaños",
-        "Serenata Romántica"
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_BcJw0ta8mc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6592,25 +6966,24 @@
       "sourceId": 4650,
       "sourceUrl": "https://mariachicielitolindoec.com/cancion/mujeres-divinas/",
       "title": "Mujeres Divinas",
-      "artist": "Vicente Fernandez",
+      "artist": "Vicente Fernández",
       "artists": [
-        "Vicente Fernandez"
+        "Vicente Fernández"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños",
-        "Despecho",
-        "Serenata Romántica"
+        "Fiestas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=xa2GLqL12Zk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6624,21 +6997,21 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Ranchera",
+        "Bolero"
       ],
       "occasions": [
-        "Aniversarios",
-        "Dia del amor y amistad",
-        "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata",
+        "Bodas",
+        "Ambientación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=AMaTurchASI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     }

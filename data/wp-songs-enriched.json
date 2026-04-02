@@ -5,9 +5,16 @@
     "totalSongs": 255,
     "songsWithMega": 0,
     "songsWithoutMega": 255,
-    "songsWithYoutube": 0,
-    "songsWithoutYoutube": 255,
-    "scanPages": false
+    "songsWithYoutube": 255,
+    "songsWithoutYoutube": 0,
+    "scanPages": false,
+    "enrichedAt": "2026-04-02T05:13:01.655Z",
+    "inputPath": "D:\\Moises\\Documents\\DESARROLLOS PROFESIONALES\\MARIACHI CIELITO LINDO\\WMCL_Prototipe\\data\\wp-songs-normalized.json",
+    "rulesPath": "D:\\Moises\\Documents\\DESARROLLOS PROFESIONALES\\MARIACHI CIELITO LINDO\\WMCL_Prototipe\\data\\wp-enrichment-rules.json",
+    "fixedYoutube": 255,
+    "fixedGenres": 0,
+    "fixedOccasions": 0,
+    "pendingCount": 14
   },
   "songs": [
     {
@@ -26,12 +33,12 @@
         "Dia del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=mD0ZJ25p8xU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -51,12 +58,12 @@
         "Dia del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=b0S-QoZtWFE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -76,12 +83,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://www.youtube.com/watch?v=F3zH7YcWkUo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -102,12 +109,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=l3ubxwgAnt0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -126,12 +133,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=edWBHRWF85M",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -145,18 +152,19 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Son"
+        "Son",
+        "Ranchera"
       ],
       "occasions": [
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ewzNHwA_cUM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -173,15 +181,17 @@
         "Boleros"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Velorios / Despedidas",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cLzgxtSE-xk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -201,12 +211,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=-b2a8As6Skc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -226,12 +236,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HYscCAbhzaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -251,12 +261,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JGHBHYeOTCE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -276,12 +286,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XoJPNzRUZzY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -299,12 +309,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=n_guCfn2pDU",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -322,12 +332,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gBtM4_NcKTc",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -345,12 +355,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BkobG2dNe_s",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -368,12 +378,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=GwtvGAy-JQM",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -388,15 +398,16 @@
         "Cumbias"
       ],
       "occasions": [
-        "Show Bailable"
+        "Show Bailable",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=m5PgVv8PkfA",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -414,12 +425,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Mdmo66psfqQ",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -437,12 +448,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EnYWG3r3QBY",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -462,12 +473,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -487,12 +498,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=6ys9Fj41B28",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -509,15 +520,16 @@
         "Cumbias"
       ],
       "occasions": [
-        "Show Bailable"
+        "Show Bailable",
+        "Show Bailable / Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2F2IG-Xl0aE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -537,12 +549,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=G1Dc3gRBbQo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -559,15 +571,16 @@
         "Cumbias"
       ],
       "occasions": [
-        "Show Bailable"
+        "Show Bailable",
+        "Reconciliación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=tVmDML_vglE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -587,12 +600,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cRvNRq0TeEo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -612,12 +625,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=bXehP6Fl0Z0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -637,12 +650,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=01nejZdkSck",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -662,12 +675,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3pg-LexET2w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -687,12 +700,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=5OkQ3pZPLbQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -712,12 +725,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=E2ju80kPIFg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -731,19 +744,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbias",
+        "Ranchera",
+        "Cumbia"
       ],
       "occasions": [
         "Fiesta Mexicana",
-        "Show Bailable"
+        "Show Bailable",
+        "Show Bailable / Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CQ_gkzGR1eY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -763,12 +779,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=kZFtBWhQpcE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -788,12 +804,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -813,12 +829,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2XsWAoNcrFY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -838,12 +854,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=LZKXu-6ln3k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -857,18 +873,19 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbias",
+        "Cumbia"
       ],
       "occasions": [
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yulDcMq5xWA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -888,12 +905,12 @@
         "Show Bailable"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2XsWAoNcrFY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -907,18 +924,21 @@
         "Alberto Barros"
       ],
       "genres": [
-        "Cumbias"
+        "Cumbias",
+        "Ranchera",
+        "Corrido"
       ],
       "occasions": [
-        "Show Bailable"
+        "Show Bailable",
+        "Día del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=U9XuqYLDIlY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -939,12 +959,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=mHL6rpmxQRg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -958,18 +978,19 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Corrido"
+        "Corrido",
+        "Ranchera"
       ],
       "occasions": [
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EjjDxPBf17o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -990,12 +1011,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=e89CusQvtq4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1016,12 +1037,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Mu0_5AM2ETY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1041,12 +1062,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=i_jY0T-G0js",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1066,12 +1087,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oFtP7PUyYoI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1091,12 +1112,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Y5Zmj21S5UU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1116,12 +1137,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Byeu5C9FS6s",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1141,12 +1162,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=52tADzXm6sM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1166,12 +1187,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=IiNWdxtBjO4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1191,12 +1212,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=D34D_zUUdKs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1216,12 +1237,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3t-TP4Gq0rc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1241,12 +1262,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JxNzAHuywsc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1266,12 +1287,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Lhk7EI88BRE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1291,12 +1312,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=F07ngnis2ig",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1316,12 +1337,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=IbWM2jivMiI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1341,12 +1362,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ga5Bo4YdgH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1368,12 +1389,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sNXQ36JqCiU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1394,12 +1415,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ndkXxNTEIA4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1419,12 +1440,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gZVKe_0n7tg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1444,12 +1465,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=g5rsnxJWNkM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1469,12 +1490,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CIXWJpV_4kc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1488,18 +1509,21 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Boleros",
+        "Corrido"
       ],
       "occasions": [
-        "Recibimiento"
+        "Recibimiento",
+        "Día del Padre",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pOi9LLVcFBo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1519,12 +1543,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oZCHFXxkoQc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1544,12 +1568,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uar9rLs4x5c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1567,12 +1591,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9j4mB5nu_dk",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1593,12 +1617,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yt8Ki-RSIyA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1618,12 +1642,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZbIszWyLuaI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1643,12 +1667,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=bc88kfQJoq0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1668,12 +1692,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BVJ9kKkn-os",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1693,12 +1717,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=RVY0WNq_EEM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1715,15 +1739,17 @@
         "Cumbias"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Dia de la Madre",
+        "Día de la Madre",
+        "Día del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Wxl0B7HGSHg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1745,12 +1771,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=COMY2Kr6Lq4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1770,12 +1796,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=fKd8AxqQiZc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1792,15 +1818,16 @@
         "Boleros"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Dia de la Madre",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UZTiHZ_TLCY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1817,15 +1844,16 @@
         "Balada"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Dia de la Madre",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=euJNFdOhP8M",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1847,12 +1875,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9F_BRjGi3L8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1872,12 +1900,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3ql5nFBfyjQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1895,15 +1923,16 @@
       ],
       "occasions": [
         "Cumpleaños",
-        "Dia de la Madre"
+        "Dia de la Madre",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8iJd52xfLa0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1923,12 +1952,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cVjDGRzj1iE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1945,15 +1974,16 @@
         "Alabanza"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gz66PdmG_ho",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1970,15 +2000,16 @@
         "Alabanza"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Día del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9GLFNM7KgwA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -1998,12 +2029,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jIGKzn3Y4Es",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2020,15 +2051,16 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9J9YxWNXS4c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2045,15 +2077,16 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HGu_gYWrk1I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2073,12 +2106,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=T4JK8WL8DcM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2095,15 +2128,16 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=R6af2FxljeQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2123,12 +2157,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uQc2-baHAUM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2148,12 +2182,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EsL6T5pSfTk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2173,12 +2207,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rdUy6x38yYg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2195,15 +2229,16 @@
         "Balada"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Q1DJgt4mc_I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2217,18 +2252,22 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Bolero"
       ],
       "occasions": [
-        "Serenata a la Virgen"
+        "Serenata a la Virgen",
+        "Día de la Madre",
+        "Serenatas (Románticas)",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cVjDGRzj1iE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2248,12 +2287,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vCnFS0NvgaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2273,12 +2312,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZoruoNdPJuk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2298,12 +2337,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=t4qKItDVyKI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2323,12 +2362,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=hiTaP1aYMyw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2348,12 +2387,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=hVl2L_i0duk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2373,12 +2412,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EWx2-6FxREA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2399,12 +2438,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9PpKK50tsaY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2421,15 +2460,16 @@
         "Alabanza"
       ],
       "occasions": [
-        "Celebración Cristiana"
+        "Celebración Cristiana",
+        "Bodas / Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=z50c2Kuyorc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2449,12 +2489,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pv3M9E7U1U8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2474,12 +2514,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NJFesiSX7WE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2499,12 +2539,12 @@
         "Celebración Cristiana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rdUy6x38yYg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2524,12 +2564,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=0vJHbkKTNGM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2549,12 +2589,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=O0OcHIUjRnk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2575,12 +2615,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=H9ivAZdrF-8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2600,12 +2640,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XrhoIdH07JI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2626,12 +2666,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZTPVeup5UFk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2651,12 +2691,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cZvPJoOMKB4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2670,18 +2710,21 @@
         "Vicente Fernandez"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Vals Ranchero",
+        "Ranchera"
       ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Despedidas / Velorios",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=U6qMQnNst9U",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2699,15 +2742,16 @@
       ],
       "occasions": [
         "Dia de la Madre",
-        "Velorios"
+        "Velorios",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rGJ4TfuFAKg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2725,15 +2769,16 @@
       ],
       "occasions": [
         "Despecho",
-        "Velorios"
+        "Velorios",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yBA1qn-fBOM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2753,12 +2798,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EBcaFpHJPZI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2778,12 +2823,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HHQp--3AB04",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2803,12 +2848,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MDin4E_Jv2k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2831,12 +2876,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MXlwuZ_nEk0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2856,12 +2901,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Cg5Y7MP00Ko",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2875,18 +2920,22 @@
         "Rocío Dúrcal"
       ],
       "genres": [
-        "Balada"
+        "Balada",
+        "Bolero"
       ],
       "occasions": [
-        "Dia de la Madre"
+        "Dia de la Madre",
+        "Día de la Madre",
+        "Serenatas (Románticas)",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=7XAUNqTOQx8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2911,12 +2960,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=VZcW5TTa5Rw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2933,15 +2982,16 @@
         "Balada"
       ],
       "occasions": [
-        "Velorios"
+        "Velorios",
+        "Día de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=a9QwsJSVYaw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2961,12 +3011,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gH8oCh1nn88",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -2986,15 +3036,16 @@
       "occasions": [
         "Reconciliaciones",
         "Serenata Romántica",
-        "Velorios"
+        "Velorios",
+        "Reconciliación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=QPPICVq6-zU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3015,15 +3066,16 @@
         "Cumpleaños",
         "Dia del amor y amistad",
         "Quinceañeras",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=spfPclyGvw8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3044,12 +3096,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=OhBVX1WbO84",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3070,12 +3122,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9se9qM30NKI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3096,12 +3148,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jcH4hL0LVn8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3122,12 +3174,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qZVGDRXzaYo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3148,12 +3200,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rYclZ_Y0rH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3174,12 +3226,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1npHMXZfmbY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3200,12 +3252,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=R12yfnab-ZQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3228,12 +3280,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Y59yDvPBSBU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3254,12 +3306,12 @@
         "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rYclZ_Y0rH4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3282,12 +3334,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_tNVEhSelH0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3310,12 +3362,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9J9YxWNXS4c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3338,12 +3390,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JTSPKPpSD_Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3364,12 +3416,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ifnioi8O9ts",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3389,12 +3441,12 @@
         "Reconciliaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=balFKWqXuT0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3416,12 +3468,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JAsh24K3GU4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3442,12 +3494,12 @@
         "Reconciliaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=95tpywDJQJM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3470,12 +3522,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=TJYLncp33EY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3492,15 +3544,16 @@
         "Boleros"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Día del Padre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=areQzt6pRkk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3523,12 +3576,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WR8hx7u2xWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3548,12 +3601,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sRXQH4rZrUA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3576,12 +3629,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WR8hx7u2xWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3604,12 +3657,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XKP46zd8tqc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3629,12 +3682,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UasiMOoMz1o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3657,12 +3710,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uAYqCRIc2IA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3685,12 +3738,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=O3qRy6KJGNU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3713,12 +3766,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vjb39UwDDIo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3738,15 +3791,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=y-6Rp1GCY1w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3769,12 +3823,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=eJpMOYIK6SA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3794,15 +3848,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=HLQtHVkCtms",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3816,7 +3871,8 @@
         "Luis Miguel"
       ],
       "genres": [
-        "Boleros"
+        "Boleros",
+        "Bolero"
       ],
       "occasions": [
         "Aniversarios",
@@ -3825,12 +3881,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cNo-d6Y6w8Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3853,12 +3909,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=UuGrc3vvdMw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3872,7 +3928,8 @@
         "Mariachi Vargas"
       ],
       "genres": [
-        "Boleros"
+        "Boleros",
+        "Bolero"
       ],
       "occasions": [
         "Aniversarios",
@@ -3881,12 +3938,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gZL7Tqov0w0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3906,15 +3963,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=E8kPtvFYgq0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3934,15 +3992,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XOGcTmOoulY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3965,12 +4024,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=KSVItZyo_l0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -3993,12 +4052,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3sboBltg_wM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4021,12 +4080,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=giAE7Yz7gHI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4046,15 +4105,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=x3lryVwGKJA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4077,12 +4137,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1aSc2xjtn6M",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4105,12 +4165,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=I_f8p0itXFw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4123,20 +4183,23 @@
       "artists": [
         "Javier Solís"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=up6Y-VCd1c8",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4158,12 +4221,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9fqPtmLAU3I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4186,12 +4249,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ppYGKtTMx8E",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4214,12 +4277,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=GuoLu1t9CmQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4242,12 +4305,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YLEDN5VB0x4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4270,12 +4333,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1IewjdQMlbQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4295,15 +4358,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=vILPMrC0fR0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4323,15 +4387,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NXAmH-7Tzt8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4351,15 +4416,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=53rcvrsB60c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4382,12 +4448,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_MTgyEPlwgY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4410,12 +4476,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=kneRedYAYpQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4438,12 +4504,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8Zihvn67CNI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4466,12 +4532,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rwcSw5us8Eo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4494,12 +4560,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rV99-gKpeAU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4519,15 +4585,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9vtPruNZFHo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4550,12 +4617,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8ngTPP3kgKQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4577,12 +4644,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NE79RDnDQ5U",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4606,12 +4673,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=387jivPcwvE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4631,15 +4698,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9NhaC0-ecWw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4662,12 +4730,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=9Z4yNNDDQok",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4691,12 +4759,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EjjDxPBf17o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4716,12 +4784,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=rxqhYXAiD88",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4735,21 +4803,23 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Boleros"
+        "Boleros",
+        "Cumbia"
       ],
       "occasions": [
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Show Bailable / Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=K2mGOE65nLA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4769,15 +4839,16 @@
         "Aniversarios",
         "Cumpleaños",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=EcI3FALvwD0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4800,12 +4871,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MjisQoerYD0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4828,12 +4899,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jsSwVGjj8KI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4856,12 +4927,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=F5QQsWMKtaM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4884,12 +4955,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=h-GSyBwKuGE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4912,12 +4983,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qPv0KJ0Ra4w",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4940,12 +5011,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ODid4nY7GGY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4965,15 +5036,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=i0PKu6Yck8Q",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -4996,12 +5068,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=BBxnW6Y18VA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5024,12 +5096,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=WndFUsSXtKU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5055,12 +5127,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cEcWnlIdUOw",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5080,12 +5152,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Xmnz6ufyn8I",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5108,12 +5180,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ke1i1TjsF24",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5137,12 +5209,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=3wUeCtnAV7A",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5165,12 +5237,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=0w-F0oBE6Zs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5193,12 +5265,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1BTh5HgdEyE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5221,12 +5293,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=L3kn9Xs4Tek",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5246,12 +5318,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=S1CBXrPLY-0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5274,12 +5346,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2DhThYPRDDI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5302,12 +5374,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sx31J7fDB4s",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5321,21 +5393,23 @@
         "Javier Solís"
       ],
       "genres": [
-        "Boleros"
+        "Boleros",
+        "Cumbia"
       ],
       "occasions": [
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Show Bailable / Fiestas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=fkH8_kHFJts",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5359,12 +5433,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=gYBfhh2sVDY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5384,15 +5458,16 @@
         "Aniversarios",
         "Dia del amor y amistad",
         "Reconciliaciones",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Fvyq7-wQ7N8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5414,12 +5489,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=e7_h4WNnlTU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5441,12 +5516,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YOyD20c9-GM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5463,15 +5538,16 @@
         "Boleros"
       ],
       "occasions": [
-        "Despecho"
+        "Despecho",
+        "Reconciliación"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NT0hlSpma90",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5493,12 +5569,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JM-GcTok-7Y",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5520,12 +5596,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=MxoGf2uXkfQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5548,12 +5624,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=RyF5xuLXUXg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5575,12 +5651,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=uqPERwigeoE",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5602,12 +5678,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Wgo8HUyaMMM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5624,15 +5700,16 @@
         "Huapango"
       ],
       "occasions": [
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Velorios / Despedidas"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=CmB7vaU337k",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5652,12 +5729,12 @@
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=x3noNiiOsEY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5679,12 +5756,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=sNXQ36JqCiU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5706,12 +5783,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=KvWCkXZZfaU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5733,12 +5810,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=eMJZfV4RWYI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5760,12 +5837,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=95nFsh_VGEo",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5787,12 +5864,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=wCQ3qeBfKEM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5805,19 +5882,22 @@
       "artists": [
         "Javier Solís"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Aniversarios",
         "Dia del amor y amistad",
-        "Serenata Romántica"
+        "Serenata Romántica",
+        "Serenatas (Románticas)"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=2CCIcrGM14o",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5838,12 +5918,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=4vVQ-1kxppY",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5864,12 +5944,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=pifvIJ9372o",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5890,12 +5970,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=qKkmUrYAAns",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5916,12 +5996,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=n3cInnnQfr4",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5942,12 +6022,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=cTvbI7yGvdM",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5960,19 +6040,21 @@
       "artists": [
         "Vicente Fernandez"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Aniversarios",
         "Cumpleaños",
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=5ar42kauTd8",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -5992,12 +6074,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=OHeHOb3E-2g",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6018,12 +6100,12 @@
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=YryFB27wHzs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6043,12 +6125,12 @@
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=s7oda7hQC0E",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6061,17 +6143,19 @@
       "artists": [
         "Mariachi Vargas"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_Hc4RUzzQlE",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6091,12 +6175,12 @@
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ZqjkrjfIkh8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6107,17 +6191,21 @@
       "title": "Las Mañanitas",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
-        "Cumpleaños"
+        "Cumpleaños",
+        "Día de la Madre",
+        "Quinceañeras"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=ixZO0j_LCj4",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6128,17 +6216,19 @@
       "title": "Happy Birthday Venezolano",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Jguqnlymeuk",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6149,18 +6239,20 @@
       "title": "Happy Birthday Cristiano",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Celebración Cristiana",
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=wW5nce6bms0",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6171,17 +6263,19 @@
       "title": "Happy Birthday",
       "artist": "",
       "artists": [],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Zh6ofSFA06M",
       "reviewFlags": {
         "missingArtist": true,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6201,12 +6295,12 @@
         "Reconciliaciones"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=o6Zgwf5LX-c",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6226,12 +6320,12 @@
         "Serenata a la Virgen"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=4W53NfQrNQg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6251,12 +6345,12 @@
         "Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NgqbgirLj48",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6276,12 +6370,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=JICtLiGqCV8",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6295,19 +6389,22 @@
         "Vicente Fernandez"
       ],
       "genres": [
-        "Vals Ranchero"
+        "Vals Ranchero",
+        "Ranchera"
       ],
       "occasions": [
         "Aniversarios",
-        "Cumpleaños"
+        "Cumpleaños",
+        "Serenatas (Románticas)",
+        "Bodas / Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=oq70h9XBj_0",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6320,17 +6417,19 @@
       "artists": [
         "Francy"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Nf4GNFghEn4",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6350,12 +6449,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=XTwmQ-R7Joc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6377,12 +6476,12 @@
         "Velorios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=a6w_j3xUNkg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6402,12 +6501,12 @@
         "Dia de la Madre"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Of3Y_IcbbuU",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6427,12 +6526,12 @@
         "Dia del amor y amistad"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=jWS7CLZn-dQ",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6455,12 +6554,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=1xlj-zAWEfg",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6480,12 +6579,12 @@
         "Cumpleaños"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=yuQku2CuIhA",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6499,18 +6598,20 @@
         "Alejandro Fernández"
       ],
       "genres": [
-        "Huapango"
+        "Huapango",
+        "Bolero"
       ],
       "occasions": [
-        "Dia del amor y amistad"
+        "Dia del amor y amistad",
+        "Bodas / Aniversarios"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=8Eaquhm0fCs",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6523,17 +6624,19 @@
       "artists": [
         "Vicente Fernandez"
       ],
-      "genres": [],
+      "genres": [
+        "Ranchera"
+      ],
       "occasions": [
         "Despecho"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=Tsk5aLgnQJs",
       "reviewFlags": {
         "missingArtist": false,
-        "missingGenres": true,
+        "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6552,12 +6655,12 @@
         "Fiesta Mexicana"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=NCvJwzDQTBM",
       "reviewFlags": {
         "missingArtist": true,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6578,12 +6681,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=_BcJw0ta8mc",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6605,12 +6708,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=xa2GLqL12Zk",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     },
@@ -6633,12 +6736,12 @@
         "Serenata Romántica"
       ],
       "megaUrl": "",
-      "youtubeUrl": "",
+      "youtubeUrl": "https://youtube.com/watch?v=AMaTurchASI",
       "reviewFlags": {
         "missingArtist": false,
         "missingGenres": false,
         "missingOccasions": false,
-        "missingYoutube": true,
+        "missingYoutube": false,
         "missingMega": true
       }
     }

@@ -13,7 +13,6 @@ interface Song {
   occasions: string[];
   link?: string;
   youtubeUrl?: string;
-  dots: number;
 }
 
 function extractYouTubeId(url?: string) {

@@ -39,7 +39,6 @@ interface Song {
   occasions: string[];
   link?: string;
   youtubeUrl?: string;
-  dots: number;
 }
 
 interface CatalogData {
@@ -137,7 +136,7 @@ export default function AdminView({ setView }: { setView: (v: ViewState) => void
     confirmPassword: '',
   });
 
-  const [newSong, setNewSong] = useState({ title: '', artist: '', link: '', youtubeUrl: '', dots: 3 });
+  const [newSong, setNewSong] = useState({ title: '', artist: '', link: '', youtubeUrl: '' });
   const [newSongGenres, setNewSongGenres] = useState<string[]>([]);
   const [newSongOccasions, setNewSongOccasions] = useState<string[]>([]);
   const [newSongGenreSearch, setNewSongGenreSearch] = useState('');
@@ -594,7 +593,6 @@ export default function AdminView({ setView }: { setView: (v: ViewState) => void
         artist: cleanedArtist,
         link: newSong.link.trim(),
         youtubeUrl: newSong.youtubeUrl.trim(),
-        dots: newSong.dots,
         genres: cleanedGenres,
         occasions: cleanedOccasions,
         createdAt: serverTimestamp(),
@@ -605,7 +603,7 @@ export default function AdminView({ setView }: { setView: (v: ViewState) => void
         await upsertCatalogList('artists', [...ARTISTS, cleanedArtist]);
       }
 
-      setNewSong({ title: '', artist: '', link: '', youtubeUrl: '', dots: 3 });
+      setNewSong({ title: '', artist: '', link: '', youtubeUrl: '' });
       setNewSongGenres([]);
       setNewSongOccasions([]);
       setNewSongGenreSearch('');
@@ -640,7 +638,6 @@ export default function AdminView({ setView }: { setView: (v: ViewState) => void
           artist: cleanedArtist,
           link: (editingSong.link || '').trim(),
           youtubeUrl: (editingSong.youtubeUrl || '').trim(),
-          dots: editingSong.dots,
           genres: cleanedGenres,
           occasions: cleanedOccasions,
         },
@@ -1542,10 +1539,6 @@ export default function AdminView({ setView }: { setView: (v: ViewState) => void
                 <div>
                   <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">URL de YouTube</label>
                   <input type="url" value={newSong.youtubeUrl} onChange={(e) => setNewSong({ ...newSong, youtubeUrl: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
-                </div>
-                <div>
-                  <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Dots (1-4)</label>
-                  <input type="number" min={1} max={4} value={newSong.dots} onChange={(e) => setNewSong({ ...newSong, dots: Math.max(1, Math.min(4, Number(e.target.value) || 1)) })} className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
                 </div>
               </div>
 

@@ -9,6 +9,7 @@ function parseArgs(argv) {
     output: 'data/wp-songs-report.md',
     preview: 40,
     missingMegaPreview: 80,
+    missingYoutubePreview: 80,
   };
 
   for (let i = 2; i < argv.length; i++) {
@@ -17,6 +18,7 @@ function parseArgs(argv) {
     if (current === '--output' && argv[i + 1]) args.output = argv[++i];
     if (current === '--preview' && argv[i + 1]) args.preview = Math.max(1, Number(argv[++i]) || 40);
     if (current === '--missing-mega-preview' && argv[i + 1]) args.missingMegaPreview = Math.max(1, Number(argv[++i]) || 80);
+    if (current === '--missing-youtube-preview' && argv[i + 1]) args.missingYoutubePreview = Math.max(1, Number(argv[++i]) || 80);
   }
 
   return args;
@@ -67,6 +69,8 @@ function main() {
   const total = songs.length;
   const withMega = songs.filter((s) => s.megaUrl).length;
   const withoutMega = total - withMega;
+  const withYoutube = songs.filter((s) => s.youtubeUrl).length;
+  const withoutYoutube = total - withYoutube;
   const withoutArtist = songs.filter((s) => !s.artist).length;
   const withoutGenres = songs.filter((s) => !Array.isArray(s.genres) || s.genres.length === 0).length;
   const withoutOccasions = songs.filter((s) => !Array.isArray(s.occasions) || s.occasions.length === 0).length;
@@ -77,6 +81,7 @@ function main() {
 
   const previewRows = songs.slice(0, args.preview);
   const missingMegaRows = songs.filter((s) => !s.megaUrl).slice(0, args.missingMegaPreview);
+  const missingYoutubeRows = songs.filter((s) => !s.youtubeUrl).slice(0, args.missingYoutubePreview);
 
   const lines = [];
   lines.push('# WordPress Migration Report');
@@ -87,6 +92,8 @@ function main() {
   lines.push(`- Total canciones: ${total}`);
   lines.push(`- Con megaUrl: ${withMega}`);
   lines.push(`- Sin megaUrl: ${withoutMega}`);
+  lines.push(`- Con youtubeUrl: ${withYoutube}`);
+  lines.push(`- Sin youtubeUrl: ${withoutYoutube}`);
   lines.push(`- Sin artista principal: ${withoutArtist}`);
   lines.push(`- Sin generos: ${withoutGenres}`);
   lines.push(`- Sin ocasiones: ${withoutOccasions}`);
@@ -101,16 +108,28 @@ function main() {
 
   lines.push('## Vista previa (primeras canciones)');
   lines.push('');
-  lines.push('| # | Title | Artist | Genres | Occasions | Mega | Source URL |');
-  lines.push('|---|---|---|---|---|---|---|');
+  lines.push('| # | Title | Artist | Genres | Occasions | Mega | YouTube | Source URL |');
+  lines.push('|---|---|---|---|---|---|---|---|');
   previewRows.forEach((song, idx) => {
     const genres = (song.genres || []).join(', ');
     const occasions = (song.occasions || []).join(', ');
     const mega = song.megaUrl ? 'SI' : 'NO';
+    const youtube = song.youtubeUrl ? 'SI' : 'NO';
     lines.push(
-      `| ${idx + 1} | ${escapeMdCell(song.title)} | ${escapeMdCell(song.artist)} | ${escapeMdCell(genres)} | ${escapeMdCell(occasions)} | ${mega} | ${escapeMdCell(song.sourceUrl)} |`
+      `| ${idx + 1} | ${escapeMdCell(song.title)} | ${escapeMdCell(song.artist)} | ${escapeMdCell(genres)} | ${escapeMdCell(occasions)} | ${mega} | ${youtube} | ${escapeMdCell(song.sourceUrl)} |`
     );
   });
+  lines.push('');
+
+  lines.push('## Canciones sin youtubeUrl (muestra)');
+  lines.push('');
+  if (!missingYoutubeRows.length) {
+    lines.push('- Todas las canciones tienen youtubeUrl.');
+  } else {
+    missingYoutubeRows.forEach((song) => {
+      lines.push(`- ${song.title} (${song.artist || 'Sin artista'}) - ${song.sourceUrl || 'Sin URL de origen'}`);
+    });
+  }
   lines.push('');
 
   lines.push('## Canciones sin megaUrl (muestra)');
@@ -126,6 +145,7 @@ function main() {
 
   lines.push('## Notas');
   lines.push('- Este reporte es de preparacion de migracion, aun no inserta nada en Firestore.');
+  lines.push('- Para enriquecer categorias y YouTube, ejecuta: npm run wp:enrich.');
   lines.push('- Si quieres mejorar deteccion de Mega, vuelve a correr extraccion con --scan-pages.');
 
   mkdirSync(dirname(outputPath), { recursive: true });
