@@ -329,7 +329,7 @@ export default function RepertoireView({
             Nuestro <br />Repertorio
           </h1>
           <p className="text-on-surface-variant font-light text-base sm:text-lg md:text-base lg:text-lg max-w-2xl mb-8 sm:mb-10 md:mb-12 leading-relaxed">
-            Explore nuestra curada seleccion de piezas maestras. Anada sus favoritas a su lista personalizada para solicitar una cotizacion detallada.
+            Explore nuestra exquisita seleccion de piezas musicales. Añada sus favoritas a su lista personalizada para solicitar una cotizacion detallada.
           </p>
 
           <div className="flex flex-col gap-3 sm:gap-4 mb-6 sm:mb-8">
@@ -850,7 +850,7 @@ export default function RepertoireView({
                 onClick={() => {
                   if (selected.length === 0) return;
                   const text = `Me gustaria solicitar las siguientes canciones:\n${selected.map((s) => `- ${s.title} (${s.artist})`).join('\n')}`;
-                  window.open(`https://wa.me/525512345678?text=${encodeURIComponent(text)}`, '_blank');
+                  window.open(`https://wa.me/593987216439?text=${encodeURIComponent(text)}`, '_blank');
                 }}
                 className="w-full gold-gradient text-on-primary py-3 sm:py-4 font-bold text-sm sm:text-base rounded-lg sm:rounded-xl hover:shadow-[0_0_20px_rgba(255,203,70,0.3)] transition-all flex items-center justify-center gap-1 sm:gap-2"
               >
