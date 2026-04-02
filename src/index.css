@@ -100,6 +100,46 @@ body {
   border-top-color: rgba(255, 248, 237, 0.08);
 }
 
+.contact-overlay-card {
+  background-color: rgba(19, 19, 19, 0.7);
+}
+
+.contact-card-title {
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.contact-card-copy {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.contact-payment-strip {
+  background-color: rgba(14, 14, 14, 0.86);
+}
+
+.contact-payment-card {
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+:root[data-theme='light'] .contact-overlay-card {
+  background-color: rgba(255, 250, 243, 0.32);
+}
+
+:root[data-theme='light'] .contact-payment-strip {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+
+:root[data-theme='light'] .contact-payment-card {
+  background-color: rgba(255, 255, 255, 0.52);
+}
+
+:root[data-theme='light'] .contact-card-title {
+  color: rgba(47, 38, 24, 0.96);
+}
+
+:root[data-theme='light'] .contact-card-copy {
+  color: rgba(47, 38, 24, 0.82);
+}
+
 :root[data-theme='light'] .site-nav .text-on-surface-variant,
 :root[data-theme='light'] .site-nav .text-on-surface,
 :root[data-theme='light'] .site-footer .text-on-surface-variant {

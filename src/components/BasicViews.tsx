@@ -205,9 +205,9 @@ export const ContactView = () => {
             </div>
           </div>
 
-          <div className="bg-surface/70 backdrop-blur-md p-10 md:p-14 border border-outline-variant/10 ambient-shadow rounded-3xl text-center">
-            <h3 className="font-serif text-3xl mb-4 text-white">Cotiza por WhatsApp</h3>
-            <p className="text-white/75 mb-8">Escríbenos directamente y te ayudamos a reservar la mejor serenata para tu evento.</p>
+          <div className="contact-overlay-card backdrop-blur-md p-10 md:p-14 border border-outline-variant/10 ambient-shadow rounded-3xl text-center">
+            <h3 className="contact-card-title font-serif text-3xl mb-4">Cotiza por WhatsApp</h3>
+            <p className="contact-card-copy mb-8">Escríbenos directamente y te ayudamos a reservar la mejor serenata para tu evento.</p>
             <a
               href="https://api.whatsapp.com/send/?phone=593987216439&text=%21Buen+d%C3%ADa%21+Deseo+la+mejor+serenata+de+Guayaquil%21&type=phone_number&app_absent=0"
               target="_blank"
@@ -219,19 +219,19 @@ export const ContactView = () => {
           </div>
         </div>
 
-        <div className="bg-surface/70 backdrop-blur-md border border-outline-variant/10 rounded-3xl p-6 md:p-8 ambient-shadow overflow-hidden">
+        <div className="contact-overlay-card backdrop-blur-md border border-outline-variant/10 rounded-3xl p-6 md:p-8 ambient-shadow overflow-hidden">
           <div className="flex items-center mb-5">
-            <h3 className="font-serif text-2xl md:text-3xl text-white">Formas de Pago</h3>
+            <h3 className="contact-card-title font-serif text-2xl md:text-3xl">Formas de Pago</h3>
           </div>
 
-          <div className="relative overflow-hidden rounded-2xl border border-outline-variant/20 bg-surface-container-lowest py-5">
+          <div className="contact-payment-strip relative overflow-hidden rounded-2xl border border-outline-variant/20 py-5">
             <motion.div
               className="flex items-center gap-6 w-max px-4"
               animate={{ x: ['0%', '-50%'] }}
               transition={{ duration: 26, ease: 'linear', repeat: Infinity }}
             >
               {tickerItems.map((method, index) => (
-                <div key={`${method.name}-${index}`} className="w-36 h-20 md:w-44 md:h-24 bg-surface/35 backdrop-blur-sm rounded-xl border border-outline-variant/30 flex items-center justify-center p-3 md:p-4 shadow-sm">
+                <div key={`${method.name}-${index}`} className="contact-payment-card w-36 h-20 md:w-44 md:h-24 backdrop-blur-sm rounded-xl border border-outline-variant/30 flex items-center justify-center p-3 md:p-4 shadow-sm">
                   <img src={method.src} alt={method.name} className="w-auto h-[3.9rem] md:h-[5.4rem] object-contain" loading="lazy" />
                 </div>
               ))}
