@@ -13,7 +13,8 @@
     "wp:extract": "node scripts/wpMigrationPrep.mjs",
     "wp:extract:scan": "node scripts/wpMigrationPrep.mjs --scan-pages",
     "wp:enrich": "node scripts/wpEnrichSongs.mjs",
-    "wp:report": "node scripts/wpMigrationReport.mjs"
+    "wp:report": "node scripts/wpMigrationReport.mjs",
+    "pdf:proformas": "node scripts/generateProformaPdfs.mjs"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
@@ -40,6 +41,7 @@
     "autoprefixer": "^10.4.21",
     "firebase-admin": "^10.3.0",
     "firebase-tools": "^15.12.0",
+    "md-to-pdf": "^5.2.5",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",
     "typescript": "~5.8.2",

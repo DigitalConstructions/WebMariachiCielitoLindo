@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { Play, ArrowRight, ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { ViewState } from '../types';
 
-const PHOTO_MODULES = import.meta.glob('../../medios/fotos_pasarela/*.{jpg,jpeg,png,JPG,JPEG,PNG}', {
+const PHOTO_MODULES = import.meta.glob('../../medios/fotos_modernas/*.{jpg,jpeg,png,JPG,JPEG,PNG}', {
   eager: true,
   import: 'default',
 }) as Record<string, string>;
@@ -32,27 +32,21 @@ const YOUTUBE_SHOWCASE_VIDEOS = [
   },
 ];
 
-const PRETTY_PHOTO_LABELS = [
-  { title: 'Noche de Serenata', subtitle: 'Presentacion especial en evento privado' },
-  { title: 'Elegancia en Escena', subtitle: 'Show en recepcion social' },
-  { title: 'Tradicion Viva', subtitle: 'Interpretacion clasica con traje de gala' },
-  { title: 'Gala Mariachi', subtitle: 'Ambientacion premium y repertorio romantico' },
-  { title: 'Boda Inolvidable', subtitle: 'Acompanamiento musical para novios' },
-  { title: 'Fiesta de Quince', subtitle: 'Entrada especial y canciones dedicadas' },
-  { title: 'Celebracion Familiar', subtitle: 'Momentos unicos con musica en vivo' },
-  { title: 'Escenario Corporativo', subtitle: 'Presentacion para eventos de marca' },
-  { title: 'Noche Mexicana', subtitle: 'Color, tradicion y alegria en cada tema' },
-  { title: 'Repertorio Premium', subtitle: 'Seleccion de clasicos y actuales' },
-  { title: 'Encuentro Social', subtitle: 'Experiencia musical para invitados' },
-  { title: 'Momento Especial', subtitle: 'Detalle artistico para una fecha importante' },
-  { title: 'Pasion Mariachi', subtitle: 'Voces e instrumentos con alta calidad' },
-  { title: 'Cierre de Gala', subtitle: 'Final emotivo para una gran noche' },
+const SIMPLE_PHOTO_LABELS = [
+  { title: 'Aniversarios', subtitle: 'Serenatas para celebrar momentos en pareja.' },
+  { title: 'Celebraciones Especiales', subtitle: 'Presentaciones para fechas memorables.' },
+  { title: 'Eventos Conmemorativos', subtitle: 'Acompanamiento musical en homenajes y reuniones.' },
+  { title: 'Cumpleanos', subtitle: 'Shows en vivo para fiestas de cumpleanos.' },
+  { title: 'Fiestas en Familia', subtitle: 'Ambiente alegre para compartir con seres queridos.' },
+  { title: 'Gala Quinceanera', subtitle: 'Entrada y repertorio para noches de quince.' },
+  { title: 'Graduaciones', subtitle: 'Musica especial para logros academicos.' },
+  { title: 'Quinceaneras', subtitle: 'Mariachi en vivo para una celebracion inolvidable.' },
 ];
 
 const PHOTO_SLIDES = Object.entries(PHOTO_MODULES)
   .sort(([a], [b]) => a.localeCompare(b))
   .map(([_, src], index) => {
-    const label = PRETTY_PHOTO_LABELS[index % PRETTY_PHOTO_LABELS.length];
+    const label = SIMPLE_PHOTO_LABELS[index % SIMPLE_PHOTO_LABELS.length];
     return {
       src,
       title: label.title,
@@ -279,7 +273,7 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
             </>
           ) : (
             <div className="rounded-3xl border border-outline-variant/20 bg-surface-container-lowest p-8 text-on-surface-variant">
-              No se encontraron fotos en la carpeta de pasarela.
+              No se encontraron fotos en la carpeta moderna.
             </div>
           )}
         </div>

@@ -13,7 +13,7 @@ const CONTACT_BG_IMAGE = new URL('../../medios/foto_principal/gradasOK.png', imp
 
 export const HomeView = ({ setView }: { setView: (v: ViewState) => void, key?: string }) => {
   return (
-    <motion.section 
+    <motion.section
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
       className="relative h-screen w-full flex items-center justify-center overflow-hidden"
     >
@@ -99,62 +99,93 @@ export const AboutView = ({ setView }: { setView: (v: ViewState) => void, key?: 
         </div>
 
         <div className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-6 md:p-10 ambient-shadow">
-        <h3 className="font-serif text-4xl md:text-5xl text-on-surface mb-6">Hitos de Trayectoria</h3>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
-          <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
-            <p className="text-primary font-bold text-base mb-2">Julio 2007</p>
-            <p className="text-on-surface-variant text-base leading-relaxed">Participación en Las Musimuestras del Municipio de Guayaquil, en colaboración con la Embajada de México.</p>
+          <h3 className="font-serif text-4xl md:text-5xl text-on-surface mb-6">Hitos de Trayectoria</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+            <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
+              <p className="text-primary font-bold text-base mb-2">Julio 2007</p>
+              <p className="text-on-surface-variant text-base leading-relaxed">Participación en Las Musimuestras del Municipio de Guayaquil, en colaboración con la Embajada de México.</p>
+            </div>
+            <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
+              <p className="text-primary font-bold text-base mb-2">24 Sept 2018</p>
+              <p className="text-on-surface-variant text-base leading-relaxed">Presentación en Babahoyo para la festividad de la Virgen de las Mercedes, organizada por la alcaldía de la ciudad.</p>
+            </div>
+            <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
+              <p className="text-primary font-bold text-base mb-2">15 Sept 2019</p>
+              <p className="text-on-surface-variant text-base leading-relaxed">Participación en mega evento del Museo Julio Jaramillo por las fiestas patrias mexicanas.</p>
+            </div>
           </div>
-          <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
-            <p className="text-primary font-bold text-base mb-2">24 Sept 2018</p>
-            <p className="text-on-surface-variant text-base leading-relaxed">Presentación en Babahoyo para la festividad de la Virgen de las Mercedes, organizada por la alcaldía de la ciudad.</p>
+        </div>
+
+        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
+          <div className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-6 md:p-8">
+            <h4 className="font-serif text-3xl text-on-surface mb-4">Artistas y Escenarios</h4>
+            <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">Nuestra agrupación ha acompañado a destacadas estrellas internacionales como Ana Gabriel, Julio Zavala, Margarita Rosa de Francisco, José Feliciano y Fer (cantante de Maná). En el plano nacional, hemos compartido escenario con Juanita Córdova, Tábata Gálvez, Tito del Salto, Marcia Casanova, Ronex y Freddy Rivadeneira, entre otros.</p>
+            <p className="text-on-surface-variant leading-relaxed text-base md:text-lg mt-4">Participamos permanentemente en programas de televisión nacional como En Contacto, Está Clarito, Cosas de Casa, Noche a Noche con Marián, Simplemente Mariela, Viva la Mañana y El Club de la Mañana.</p>
           </div>
-          <div className="bg-surface-container-lowest border border-outline-variant/20 rounded-2xl p-5">
-            <p className="text-primary font-bold text-base mb-2">15 Sept 2019</p>
-            <p className="text-on-surface-variant text-base leading-relaxed">Participación en mega evento del Museo Julio Jaramillo por las fiestas patrias mexicanas.</p>
+
+          <div className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-6 md:p-8">
+            <h4 className="font-serif text-3xl text-on-surface mb-4">¿Por Qué Nos Prefieren?</h4>
+            <div className="space-y-3 text-on-surface-variant text-base md:text-lg leading-relaxed">
+              <p>Ofrecemos la mejor calidad en voces e instrumentos, con vestuario de mariachi acorde a la ocasión y una presentación profesional.</p>
+              <p>Contamos con un amplio repertorio para cada serenata y cada tipo de evento, adaptando el setlist a lo que el cliente necesita.</p>
+              <p>Nuestros músicos son seleccionados bajo un estricto control de calidad, garantizando performance, compromiso y seriedad en cada presentación.</p>
+              <p>Creemos que el precio siempre va de la mano con la calidad. Nuestros clientes reciben un servicio responsable, puntual y de alto nivel artístico.</p>
+            </div>
           </div>
         </div>
       </div>
-
-        <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
-        <div className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-6 md:p-8">
-          <h4 className="font-serif text-3xl text-on-surface mb-4">Artistas y Escenarios</h4>
-          <p className="text-on-surface-variant leading-relaxed text-base md:text-lg">Nuestra agrupación ha acompañado a destacadas estrellas internacionales como Ana Gabriel, Julio Zavala, Margarita Rosa de Francisco, José Feliciano y Fer (cantante de Maná). En el plano nacional, hemos compartido escenario con Juanita Córdova, Tábata Gálvez, Tito del Salto, Marcia Casanova, Ronex y Freddy Rivadeneira, entre otros.</p>
-          <p className="text-on-surface-variant leading-relaxed text-base md:text-lg mt-4">Participamos permanentemente en programas de televisión nacional como En Contacto, Está Clarito, Cosas de Casa, Noche a Noche con Marián, Simplemente Mariela, Viva la Mañana y El Club de la Mañana.</p>
-        </div>
-
-        <div className="bg-surface-container-low border border-outline-variant/10 rounded-3xl p-6 md:p-8">
-          <h4 className="font-serif text-3xl text-on-surface mb-4">¿Por Qué Nos Prefieren?</h4>
-          <div className="space-y-3 text-on-surface-variant text-base md:text-lg leading-relaxed">
-            <p>Ofrecemos la mejor calidad en voces e instrumentos, con vestuario de mariachi acorde a la ocasión y una presentación profesional.</p>
-            <p>Contamos con un amplio repertorio para cada serenata y cada tipo de evento, adaptando el setlist a lo que el cliente necesita.</p>
-            <p>Nuestros músicos son seleccionados bajo un estricto control de calidad, garantizando performance, compromiso y seriedad en cada presentación.</p>
-            <p>Creemos que el precio siempre va de la mano con la calidad. Nuestros clientes reciben un servicio responsable, puntual y de alto nivel artístico.</p>
-          </div>
-        </div>
-        </div>
-    </div>
     </motion.section>
   );
 };
 
 export const ContactView = () => {
-  const paymentMethods = [
-    { name: 'Banco Guayaquil', src: new URL('../../medios/formas_de_pago/baguayquil.svg', import.meta.url).href },
-    { name: 'Banco del Pacifico', src: new URL('../../medios/formas_de_pago/bapacifico.svg', import.meta.url).href },
-    { name: 'Diners', src: new URL('../../medios/formas_de_pago/diners.svg', import.meta.url).href },
-    { name: 'Google Pay', src: new URL('../../medios/formas_de_pago/googlepay.svg', import.meta.url).href },
-    { name: 'MasterCard', src: new URL('../../medios/formas_de_pago/master.svg', import.meta.url).href },
-    { name: 'Apple Pay', src: new URL('../../medios/formas_de_pago/payapple.svg', import.meta.url).href },
-    { name: 'PayPal', src: new URL('../../medios/formas_de_pago/paypal.svg', import.meta.url).href },
-    { name: 'PayPhone', src: new URL('../../medios/formas_de_pago/payphone.svg', import.meta.url).href },
-    { name: 'Banco Pichincha', src: new URL('../../medios/formas_de_pago/pichincha.svg', import.meta.url).href },
-    { name: 'Produbanco', src: new URL('../../medios/formas_de_pago/produbanco.svg', import.meta.url).href },
-    { name: 'American Express', src: new URL('../../medios/formas_de_pago/taamerican.svg', import.meta.url).href },
-    { name: 'Western Union', src: new URL('../../medios/formas_de_pago/western.svg', import.meta.url).href },
+  const paymentCategories = [
+    {
+      title: 'Tarjetas',
+      subtitle: 'Credito y Debito',
+      cardClassName: 'xl:col-span-1 min-h-[245px]',
+      logosClassName: 'grid-cols-2',
+      logoClassName: 'h-[4.5rem] md:h-24',
+      logos: [
+        { name: 'MasterCard', src: new URL('../../medios/formas_de_pago/master.svg', import.meta.url).href },
+        { name: 'Diners', src: new URL('../../medios/formas_de_pago/diners.svg', import.meta.url).href },
+        { name: 'American Express', src: new URL('../../medios/formas_de_pago/taamerican.svg', import.meta.url).href },
+      ],
+    },
+    {
+      title: 'Transferencia',
+      subtitle: 'Bancos Nacionales',
+      cardClassName: 'xl:col-span-1 min-h-[245px]',
+      logosClassName: 'grid-cols-2',
+      logoClassName: 'h-[4.5rem] md:h-24',
+      logos: [
+        { name: 'Banco Pichincha', src: new URL('../../medios/formas_de_pago/pichincha.svg', import.meta.url).href },
+        { name: 'Banco Guayaquil', src: new URL('../../medios/formas_de_pago/baguayquil.svg', import.meta.url).href },
+        { name: 'Produbanco', src: new URL('../../medios/formas_de_pago/produbanco.svg', import.meta.url).href },
+      ],
+    },
+    {
+      title: 'Apps Moviles',
+      subtitle: 'PayPhone / Google Pay',
+      cardClassName: 'xl:col-span-1 min-h-[245px]',
+      logosClassName: 'grid-cols-2',
+      logoClassName: 'h-[4.5rem] md:h-24',
+      logos: [
+        { name: 'Google Pay', src: new URL('../../medios/formas_de_pago/googlepay.svg', import.meta.url).href },
+        { name: 'PayPhone', src: new URL('../../medios/formas_de_pago/payphone.svg', import.meta.url).href },
+      ],
+    },
+    {
+      title: 'Giros Int.',
+      subtitle: 'Western Union',
+      cardClassName: 'xl:col-span-1 min-h-[285px]',
+      logosClassName: 'grid-cols-1',
+      logoClassName: 'h-[7.875rem] md:h-[10.5rem]',
+      logos: [
+        { name: 'Western Union', src: new URL('../../medios/formas_de_pago/western.svg', import.meta.url).href },
+      ],
+    },
   ];
-
-  const tickerItems = [...paymentMethods, ...paymentMethods];
 
   return (
     <motion.section initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -20 }} className="py-32 px-6 md:px-12 lg:px-24 bg-surface-container-low relative overflow-hidden min-h-screen flex items-center">
@@ -191,12 +222,12 @@ export const ContactView = () => {
               </div>
               <div className="flex items-start gap-3 md:gap-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0 rounded-full"><Mail size={18} className="md:w-5 md:h-5" /></div>
-                  <div>
-                    <p className="text-xs text-white/70 uppercase tracking-widest mb-2 md:mb-2 font-bold">Correo Electrónico</p>
-                    <p className="text-xs sm:text-sm md:text-lg lg:text-xl font-medium text-white leading-tight break-normal">
-                      mariachicielitolindoecuador<wbr />@gmail.com
-                    </p>
-                  </div>
+                <div>
+                  <p className="text-xs text-white/70 uppercase tracking-widest mb-2 md:mb-2 font-bold">Correo Electrónico</p>
+                  <p className="text-xs sm:text-sm md:text-lg lg:text-xl font-medium text-white leading-tight break-normal">
+                    mariachicielitolindoecuador<wbr />@gmail.com
+                  </p>
+                </div>
               </div>
               <div className="flex items-start gap-3 md:gap-6">
                 <div className="w-10 h-10 md:w-12 md:h-12 border border-outline-variant/30 flex items-center justify-center text-primary flex-shrink-0 rounded-full"><MapPin size={18} className="md:w-5 md:h-5" /></div>
@@ -221,21 +252,29 @@ export const ContactView = () => {
 
         <div className="contact-overlay-card backdrop-blur-md border border-outline-variant/10 rounded-3xl p-6 md:p-8 ambient-shadow overflow-hidden">
           <div className="flex items-center mb-5">
-            <h3 className="contact-card-title font-serif text-2xl md:text-3xl">Formas de Pago</h3>
+            <h3 className="contact-card-title font-serif text-2xl md:text-3xl">Formas de Pago Aceptadas</h3>
           </div>
 
-          <div className="contact-payment-strip relative overflow-hidden rounded-2xl border border-outline-variant/20 py-5">
-            <motion.div
-              className="flex items-center gap-6 w-max px-4"
-              animate={{ x: ['0%', '-50%'] }}
-              transition={{ duration: 26, ease: 'linear', repeat: Infinity }}
-            >
-              {tickerItems.map((method, index) => (
-                <div key={`${method.name}-${index}`} className="contact-payment-card w-36 h-20 md:w-44 md:h-24 backdrop-blur-sm rounded-xl border border-outline-variant/30 flex items-center justify-center p-3 md:p-4 shadow-sm">
-                  <img src={method.src} alt={method.name} className="w-auto h-[3.9rem] md:h-[5.4rem] object-contain" loading="lazy" />
+          <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-5 xl:gap-5 items-stretch">
+            {paymentCategories.map((category) => (
+              <div key={category.title} className={`contact-payment-card rounded-2xl border border-outline-variant/30 p-4 md:p-5 ${category.cardClassName}`}>
+                <div className={`grid ${category.logosClassName} gap-4 md:gap-5 place-items-center min-h-[150px] md:min-h-[180px]`}>
+                  {category.logos.map((logo) => (
+                    <img
+                      key={logo.name}
+                      src={logo.src}
+                      alt={logo.name}
+                      className={`w-auto object-contain ${category.logoClassName}`}
+                      loading="lazy"
+                    />
+                  ))}
                 </div>
-              ))}
-            </motion.div>
+                <div className="mt-4 text-center">
+                  <p className="text-primary font-bold uppercase tracking-wide text-sm">{category.title}</p>
+                  <p className="contact-card-copy text-sm mt-1">{category.subtitle}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

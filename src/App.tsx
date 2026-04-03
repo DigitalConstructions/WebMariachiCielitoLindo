@@ -332,7 +332,18 @@ export default function App() {
           </a>
         </div>
         <div className="text-on-surface-variant text-xs font-light text-center md:text-right">
-          © 2026 Mariachi Cielito Lindo. Todos los derechos reservados.
+          <div>© 2026 Mariachi Cielito Lindo. Todos los derechos reservados.</div>
+          <div className="mt-1">
+            Desarrollado por{' '}
+            <a
+              href="https://abvcdigital.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary hover:text-primary-container underline underline-offset-2"
+            >
+              ABVC Digital Constructions
+            </a>
+          </div>
         </div>
       </footer>
     </div>
