@@ -195,9 +195,9 @@ export const ContactView = () => {
       </div>
       <div className="max-w-7xl mx-auto grid grid-cols-1 gap-14 relative z-10 w-full">
         <div className="w-full flex justify-center lg:justify-start">
-          <h2 className="font-serif text-center lg:text-left text-[5.5rem] md:text-[8rem] lg:text-[11rem] leading-[0.82] tracking-[-0.04em] text-white drop-shadow-[0_4px_22px_rgba(0,0,0,0.8)] max-w-none">
-            Agende una <br />
-            <span className="text-primary italic">Experiencia</span>
+          <h2 className="font-serif text-center lg:text-left text-5xl sm:text-7xl md:text-8xl lg:text-[10rem] leading-tight md:leading-[0.85] tracking-tight text-white drop-shadow-[0_4px_22px_rgba(0,0,0,0.8)] max-w-full break-words">
+            Agende una <br className="hidden sm:block" />
+            <span className="text-primary italic block mt-1 sm:mt-0 sm:inline">Experiencia</span>
           </h2>
         </div>
 
@@ -288,12 +288,11 @@ export const ContactView = () => {
               </p>
             </div>
             <a
-              href="https://api.whatsapp.com/send/?phone=593987216439&text=Hola%2C+quiero+instalar+la+APK+de+la+web+de+Mariachi+Internacional+Cielito+Lindo&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/Mariachi-Cielito-Lindo-App.apk"
+              download="Mariachi-Cielito-Lindo.apk"
               className="inline-flex items-center justify-center gold-gradient text-on-primary px-8 py-4 font-bold text-base rounded-full hover:shadow-[0_0_24px_rgba(255,203,70,0.35)] transition-all whitespace-nowrap"
             >
-              Solicitar APK por WhatsApp
+              Descargar Aplicación
             </a>
           </div>
         </div>
