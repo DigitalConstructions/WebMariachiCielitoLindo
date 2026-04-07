@@ -77,7 +77,7 @@ export const AboutView = ({ setView }: { setView: (v: ViewState) => void, key?: 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-start p-6 md:p-10 lg:p-12 min-h-[760px]">
             <div className="flex items-end h-full">
               <div className="bg-surface-container-low/90 backdrop-blur-sm p-6 border border-outline-variant/30 max-w-xs ambient-shadow rounded-2xl">
-                <p className="font-serif text-2xl text-primary mb-2">Desde 2007</p>
+                <p className="font-serif text-2xl text-primary mb-2">Desde 1992</p>
                 <p className="text-sm text-on-surface-variant">Trayectoria activa en escenarios institucionales, culturales y televisivos.</p>
               </div>
             </div>
@@ -86,7 +86,7 @@ export const AboutView = ({ setView }: { setView: (v: ViewState) => void, key?: 
               <span className="text-primary font-bold tracking-[0.2em] text-4xl md:text-5xl mb-4 block uppercase">Nuestra Historia</span>
               <h2 className="font-serif text-5xl md:text-7xl mb-8 leading-tight text-white">Cómo Nació Cielito Lindo</h2>
               <div className="space-y-5 text-white/90 font-light text-lg md:text-xl leading-relaxed">
-                <p>Mariachi Internacional Cielito Lindo nace como una inspiración musical de la Lcda. Paola Madero, quien ya contaba con trayectoria como violinista en otras agrupaciones de Mariachi de la ciudad de Guayaquil.</p>
+                <p>Mariachi Internacional Cielito Lindo nace como una inspiración musical de 5 músicos de la época y de la Lcda. Paola Madero, quien ya contaba con trayectoria como violinista en otras agrupaciones de Mariachi de la ciudad de Guayaquil. El aval del nombre lo dió la Sra. Paola Rivera, dueña del restaurante “Cielito Lindo”, que en los años 90 fue uno de los primeros restaurantes mexicanos en Guayaquil y se convirtió en mentora del mariachi, trayendo desde México sombreros, corbatines y botonaduras originales.</p>
                 <p>Desde sus inicios, el proyecto fue concebido para recrear los mejores momentos de la música mexicana e internacional, brindando prestancia, alegría y vitalidad en cada actuación.</p>
                 <p>A través de los años, la agrupación ha recorrido diversos escenarios y se ha consolidado como un referente artístico por su calidad vocal, su ejecución instrumental y su presencia escénica.</p>
               </div>
@@ -95,6 +95,22 @@ export const AboutView = ({ setView }: { setView: (v: ViewState) => void, key?: 
                 Ver nuestra galería <ArrowRight size={20} className="group-hover:translate-x-2 transition-transform" />
               </button>
             </div>
+          </div>
+        </div>
+
+        <div className="rounded-3xl overflow-hidden border border-outline-variant/10 bg-black ambient-shadow">
+          <div className="bg-surface-container-low/90 p-8 md:p-12">
+            <h3 className="font-serif text-4xl md:text-5xl text-white mb-4">Historia de un Mariachi</h3>
+            <p className="text-on-surface-variant max-w-3xl text-base md:text-lg leading-relaxed">Descubre cómo Mariachi Internacional Cielito Lindo ha forjado su legado con pasión, tradición y actuaciones inolvidables en cada evento.</p>
+          </div>
+          <div className="aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.youtube.com/embed/XM6ItRqYAyw?rel=0"
+              title="Historia de un Mariachi"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
           </div>
         </div>
 

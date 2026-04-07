@@ -9,25 +9,25 @@ const PHOTO_MODULES = import.meta.glob('../../medios/fotos_modernas/*.{jpg,jpeg,
 }) as Record<string, string>;
 
 const HERO_MAIN_PHOTO = new URL('../../medios/foto_principal/gradasOK.png', import.meta.url).href;
-const FEATURED_YOUTUBE_ID = '24xCQqxjg4M';
+const FEATURED_YOUTUBE_ID = '5ZJ32Ax1NL4';
 
 const YOUTUBE_SHOWCASE_VIDEOS = [
   {
-    id: 'Ha9BfNNvm4w',
-    title: 'Presentacion en Vivo 1',
-    desc: 'Interpretacion especial de Mariachi Cielito Lindo',
+    id: 'E1UdKNPtg0M',
+    title: 'Serenata para Evento Social',
+    desc: 'Mariachi Cielito Lindo acompañando una tarde social con música tradicional y ambiente familiar.',
     time: 'YouTube',
   },
   {
-    id: 'tz18k7XmvBg',
-    title: 'Presentacion en Vivo 2',
-    desc: 'Show en evento social con repertorio romantico',
+    id: 'FTynxzU390U',
+    title: 'Show Romántico en Vivo',
+    desc: 'Una presentación apasionada con repertorio romántico pensada para bodas, aniversarios y celebraciones de amor.',
     time: 'YouTube',
   },
   {
-    id: 'x8G1Wecswuw',
-    title: 'Presentacion en Vivo 3',
-    desc: 'Actuacion destacada con ambiente de gala',
+    id: '_0pC-9dGAcg',
+    title: 'Actuación de Gala',
+    desc: 'Actuación elegante de Mariachi Cielito Lindo en un entorno de gala con presencia escénica y energía musical.',
     time: 'YouTube',
   },
 ];
@@ -171,9 +171,14 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
               <h2 className="font-serif text-3xl md:text-4xl text-on-surface mb-2">Presentaciones en Video</h2>
               <p className="text-on-surface-variant font-light">Disfrute de nuestra calidad sonora y presencia escénica.</p>
             </div>
-            <button className="text-primary flex items-center gap-2 font-label text-sm group">
+            <a
+              href="https://www.youtube.com/channel/UCqsvmHSNoKFsSGModRy3yuQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-primary flex items-center gap-2 font-label text-sm group"
+            >
               Ver canal de YouTube <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-            </button>
+            </a>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {YOUTUBE_SHOWCASE_VIDEOS.map((vid) => (
