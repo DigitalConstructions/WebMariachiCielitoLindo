@@ -3,6 +3,7 @@ import { Play, Pause, Volume2, VolumeX, Menu, X, Facebook, Instagram, Youtube, M
 import { AnimatePresence, motion } from 'motion/react';
 import { ViewState } from './types';
 import { HomeView, AboutView, ContactView } from './components/BasicViews';
+import ReviewsView from './components/ReviewsView';
 import GalleryView from './components/GalleryView';
 import RepertoireView from './components/RepertoireView';
 import AdminView from './components/AdminView';
@@ -11,6 +12,9 @@ import logoMain from '../medios/logos/logo.svg';
 import logoMobile from '../medios/logos/logmovil.svg';
 import logoHeader from '../medios/logos/logo_head_foot.png';
 import logoFooter from '../medios/logos/logo_head_foot_gra.png';
+import { auth, db } from './firebase';
+import { onAuthStateChanged, User } from 'firebase/auth';
+import { doc, getDoc } from 'firebase/firestore';
 
 const BACKGROUND_PLAYLIST = [
   { title: "Cielito Lindo", artist: "Quirino Mendoza y Cortés", url: "/canciones/Cielito%20Lindo.mp3" },
@@ -40,12 +44,36 @@ export default function App() {
     }
     return 'dark';
   });
+  
+  // Auth & Stealth State
+  const [user, setUser] = useState<User | null>(null);
+  const [userRole, setUserRole] = useState<'admin' | 'musician' | null>(null);
+  const [isDoorRevealed, setIsDoorRevealed] = useState(false);
+  const [logoClicks, setLogoClicks] = useState(0);
+  const lastLogoClickTime = useRef<number>(0);
+
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', themeMode);
     window.localStorage.setItem('wmcl-theme', themeMode);
   }, [themeMode]);
+
+  // Firebase Auth Listener
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
+      setUser(currentUser);
+      if (currentUser) {
+        const userDoc = await getDoc(doc(db, 'users', currentUser.uid));
+        if (userDoc.exists()) {
+          setUserRole(userDoc.data().role);
+        }
+      } else {
+        setUserRole(null);
+      }
+    });
+    return () => unsubscribe();
+  }, []);
 
   // Set initial audio volume
   useEffect(() => {
@@ -97,6 +125,7 @@ export default function App() {
     { id: 'home', label: 'Inicio' },
     { id: 'about', label: 'Nosotros' },
     { id: 'gallery', label: 'Galería' },
+    { id: 'reviews', label: 'Reseñas' },
     { id: 'repertoire', label: 'Repertorio' },
     { id: 'contact', label: 'Contacto' },
   ];
@@ -120,9 +149,9 @@ export default function App() {
     const track = BACKGROUND_PLAYLIST[index];
     toast.success(
       <span>
-        Reproduciendo:<br/>
+        Reproduciendo:<br />
         <strong className="font-bold">{track.title}</strong> - <em className="italic opacity-80">{track.artist}</em>
-      </span>, 
+      </span>,
       {
         icon: '🎵',
         style: {
@@ -145,11 +174,11 @@ export default function App() {
     }
   }, [currentTrackIndex]);
 
-  return (    <>
-      <Toaster position="top-right" toastOptions={{ duration: 4000 }} />    <div className="min-h-screen relative overflow-hidden bg-surface">
+  return (<>
+    <Toaster position="top-right" toastOptions={{ duration: 4000 }} />    <div className="min-h-screen relative overflow-hidden bg-surface">
       {/* Audio Element */}
-      <audio 
-        ref={audioRef} 
+      <audio
+        ref={audioRef}
         src={BACKGROUND_PLAYLIST[currentTrackIndex].url}
         onEnded={handleTrackEnd}
       />
@@ -172,28 +201,47 @@ export default function App() {
       <nav className="site-nav fixed top-0 w-full z-40 glass-effect border-b border-outline-variant/10">
         <div className="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
           <button
-            onClick={() => setCurrentView('home')}
+            onClick={() => {
+              setCurrentView('home');
+              if (!user) {
+                const now = Date.now();
+                const diff = now - lastLogoClickTime.current;
+                
+                // If interval is less than 600ms, it's a consecutive click
+                if (diff < 600) {
+                  const newClicks = logoClicks + 1;
+                  if (newClicks >= 3) {
+                    setIsDoorRevealed(true);
+                    setLogoClicks(0);
+                  } else {
+                    setLogoClicks(newClicks);
+                  }
+                } else {
+                  setLogoClicks(1); // Reset to first click if too slow
+                }
+                
+                lastLogoClickTime.current = now;
+              }
+            }}
             aria-label="Ir al inicio"
-            className="hover:opacity-90 transition-opacity"
+            className="hover:opacity-90 transition-opacity select-none"
           >
             <img
               src={logoMain}
               alt="Mariachi Cielito Lindo"
               className="hidden md:block h-12 w-auto object-contain"
               loading="eager"
-              decoding="async"
             />
             <img
               src={logoHeader}
               alt="Mariachi Cielito Lindo"
               className="md:hidden h-14 w-auto object-contain"
               loading="eager"
-              decoding="async"
             />
           </button>
           <div className="hidden md:flex items-center gap-8 font-label text-sm tracking-wide">
             {navLinks.map(link => (
-              <button 
+              <button
                 key={link.id}
                 onClick={() => setCurrentView(link.id)}
                 className={`transition-colors pb-1 ${currentView === link.id ? 'text-primary border-b border-primary' : 'text-on-surface-variant hover:text-primary'}`}
@@ -209,12 +257,14 @@ export default function App() {
           >
             {themeMode === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
           </button>
-          <button 
-            onClick={() => setCurrentView(currentView === 'admin' ? 'home' : 'admin')} 
-            className="hidden md:block gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm hover:shadow-[0_0_20px_rgba(255,203,70,0.3)] transition-all active:scale-95 rounded-full"
-          >
-            {currentView === 'admin' ? 'Volver al Inicio' : 'Acceso Usuarios'}
-          </button>
+          {(user || isDoorRevealed) && (
+            <button 
+              onClick={() => setCurrentView(currentView === 'admin' ? 'home' : 'admin')} 
+              className="hidden md:block gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm hover:shadow-[0_0_20px_rgba(255,203,70,0.3)] transition-all active:scale-95 rounded-full"
+            >
+              {!user ? 'Acceso Usuarios' : (currentView === 'admin' ? 'Volver al Inicio' : 'Panel Admin')}
+            </button>
+          )}
           <div className="md:hidden flex items-center gap-1">
             <button
               onClick={toggleTheme}
@@ -223,7 +273,7 @@ export default function App() {
             >
               {themeMode === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
             </button>
-            <button 
+            <button
               className="text-primary p-2"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
@@ -244,7 +294,7 @@ export default function App() {
             >
               <div className="flex flex-col px-6 py-4 gap-4">
                 {navLinks.map(link => (
-                  <button 
+                  <button
                     key={link.id}
                     onClick={() => {
                       setCurrentView(link.id);
@@ -255,15 +305,17 @@ export default function App() {
                     {link.label}
                   </button>
                 ))}
-                <button 
-                  onClick={() => {
-                    setCurrentView(currentView === 'admin' ? 'home' : 'admin');
-                    setIsMobileMenuOpen(false);
-                  }} 
-                  className="gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm rounded-full w-full mt-2"
-                >
-                  {currentView === 'admin' ? 'Volver al Inicio' : 'Acceso Usuarios'}
-                </button>
+                {(user || isDoorRevealed) && (
+                  <button 
+                    onClick={() => {
+                      setCurrentView(currentView === 'admin' ? 'home' : 'admin');
+                      setIsMobileMenuOpen(false);
+                    }} 
+                    className="gold-gradient text-on-primary px-6 py-3 font-label font-semibold text-sm rounded-full w-full mt-2"
+                  >
+                    {!user ? 'Acceso Usuarios' : (currentView === 'admin' ? 'Volver al Inicio' : 'Panel Admin')}
+                  </button>
+                )}
               </div>
             </motion.div>
           )}
@@ -276,6 +328,7 @@ export default function App() {
           {currentView === 'home' && <HomeView key="home" setView={setCurrentView} />}
           {currentView === 'about' && <AboutView key="about" setView={setCurrentView} />}
           {currentView === 'gallery' && <GalleryView key="gallery" setView={setCurrentView} onYoutubePlayerStateChange={handleYoutubePlayerStateChange} />}
+          {currentView === 'reviews' && <ReviewsView key="reviews" />}
           {currentView === 'repertoire' && <RepertoireView key="repertoire" setView={setCurrentView} onYoutubePlayerStateChange={handleYoutubePlayerStateChange} />}
           {currentView === 'contact' && <ContactView key="contact" />}
           {currentView === 'admin' && (
@@ -283,6 +336,8 @@ export default function App() {
               key="admin" 
               setView={setCurrentView} 
               onYoutubePlayerStateChange={handleYoutubePlayerStateChange} 
+              user={user}
+              role={userRole}
             />
           )}
         </AnimatePresence>
@@ -353,6 +408,6 @@ export default function App() {
         </div>
       </footer>
     </div>
-    </>
+  </>
   );
 }

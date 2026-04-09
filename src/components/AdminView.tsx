@@ -9,6 +9,7 @@ import {
   Link as LinkIcon,
   List,
   LogOut,
+  MessageSquare,
   Pencil,
   PlayCircle,
   Plus,
@@ -18,6 +19,7 @@ import {
   Users,
   X,
 } from 'lucide-react';
+import AdminReviews from './AdminReviews';
 import toast from 'react-hot-toast';
 import { ViewState } from '../types';
 import { auth, db, handleFirestoreError, OperationType } from '../firebase';
@@ -31,7 +33,7 @@ import {
   signOut,
   User,
 } from 'firebase/auth';
-import { collection, onSnapshot, query, orderBy, doc, setDoc, deleteDoc, getDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, onSnapshot, query, where, orderBy, doc, setDoc, deleteDoc, getDoc, serverTimestamp } from 'firebase/firestore';
 
 interface Song {
   id: string;
@@ -92,7 +94,7 @@ interface RejectedUser {
   role: 'admin' | 'musician';
 }
 
-type Section = 'songs' | 'users' | 'filters' | 'addSong';
+type Section = 'songs' | 'users' | 'filters' | 'addSong' | 'reviews';
 type RoleFilter = 'admin' | 'musician';
 type SongFilterDropdown = 'genero' | 'ocasion' | 'artista' | null;
 type AuthMode = 'login' | 'register';
@@ -132,18 +134,31 @@ function isValidCorporatePassword(password: string) {
   return minLength && hasUpper && hasLower && hasNumber;
 }
 
-export default function AdminView({ 
-  setView, 
-  onYoutubePlayerStateChange 
-}: { 
-  setView: (v: ViewState) => void; 
+export default function AdminView({
+  setView,
+  onYoutubePlayerStateChange,
+  user: initialUser,
+  role: initialRole
+}: {
+  setView: (v: ViewState) => void;
   onYoutubePlayerStateChange?: (isOpen: boolean) => void;
-  key?: string 
+  user?: User | null;
+  role?: 'admin' | 'musician' | null;
+  key?: string
 }) {
-  const [user, setUser] = useState<User | null>(null);
-  const [role, setRole] = useState<'admin' | 'musician' | null>(null);
-  const [loadingAuth, setLoadingAuth] = useState(true);
+  const [user, setUser] = useState<User | null>(initialUser || null);
+  const [role, setRole] = useState<'admin' | 'musician' | null>(initialRole || null);
+  const [loadingAuth, setLoadingAuth] = useState(!initialUser);
   const [playingSong, setPlayingSong] = useState<Song | null>(null);
+  const [pendingReviewsCount, setPendingReviewsCount] = useState(0);
+
+  useEffect(() => {
+    if (initialUser && initialRole) {
+      setUser(initialUser);
+      setRole(initialRole);
+      setLoadingAuth(false);
+    }
+  }, [initialUser, initialRole]);
 
   useEffect(() => {
     onYoutubePlayerStateChange?.(Boolean(playingSong));
@@ -256,6 +271,16 @@ export default function AdminView({
     const term = editingSong.artist.trim();
     return term !== '' && !ARTISTS.some(a => a.toLowerCase() === term.toLowerCase());
   }, [editingSong?.artist, ARTISTS]);
+
+  // Subscribe to pending reviews count for notification badge
+  useEffect(() => {
+    if (role !== 'admin') return;
+    const q = query(collection(db, 'reviews'), where('status', '==', 'pending'));
+    const unsubscribe = onSnapshot(q, (snapshot) => {
+      setPendingReviewsCount(snapshot.size);
+    });
+    return () => unsubscribe();
+  }, [role]);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (currentUser) => {
@@ -1005,9 +1030,8 @@ export default function AdminView({
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
           <button
             onClick={() => setActiveSection('songs')}
-            className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${
-              activeSection === 'songs' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
-            }`}
+            className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${activeSection === 'songs' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
+              }`}
           >
             Lista de Canciones
           </button>
@@ -1015,9 +1039,8 @@ export default function AdminView({
           {role === 'admin' && (
             <button
               onClick={() => setActiveSection('users')}
-              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${
-                activeSection === 'users' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
-              }`}
+              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${activeSection === 'users' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
+                }`}
             >
               Usuarios
             </button>
@@ -1025,10 +1048,28 @@ export default function AdminView({
 
           {role === 'admin' && (
             <button
+              onClick={() => setActiveSection('reviews')}
+              className={`relative px-4 py-3 rounded-xl border text-sm font-semibold transition-colors flex items-center justify-center gap-2 ${activeSection === 'reviews' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
+                }`}
+            >
+              <MessageSquare size={16} /> Reseñas
+              {pendingReviewsCount > 0 && (
+                <motion.span
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  className="absolute -top-2 -right-2 w-5 h-5 bg-red-500 text-white text-[10px] flex items-center justify-center rounded-full border-2 border-surface-container-low shadow-lg font-bold"
+                >
+                  {pendingReviewsCount > 9 ? '+9' : pendingReviewsCount}
+                </motion.span>
+              )}
+            </button>
+          )}
+
+          {role === 'admin' && (
+            <button
               onClick={() => setActiveSection('filters')}
-              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${
-                activeSection === 'filters' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
-              }`}
+              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${activeSection === 'filters' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
+                }`}
             >
               Gestionar Filtros
             </button>
@@ -1037,9 +1078,8 @@ export default function AdminView({
           {role === 'admin' && (
             <button
               onClick={() => setActiveSection('addSong')}
-              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${
-                activeSection === 'addSong' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
-              }`}
+              className={`px-4 py-3 rounded-xl border text-sm font-semibold transition-colors ${activeSection === 'addSong' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface hover:border-primary'
+                }`}
             >
               Añadir Canción
             </button>
@@ -1067,11 +1107,10 @@ export default function AdminView({
                   <div className="relative">
                     <button
                       onClick={() => setOpenSongFilterDropdown(openSongFilterDropdown === 'ocasion' ? null : 'ocasion')}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${
-                        songFilterOccasions.length > 0
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${songFilterOccasions.length > 0
                           ? 'bg-on-surface-variant/10 border-on-surface-variant text-on-surface-variant'
                           : 'bg-surface-container-lowest border-outline-variant/30 text-on-surface hover:border-on-surface-variant'
-                      }`}
+                        }`}
                     >
                       Ocasión {songFilterOccasions.length > 0 ? `(${songFilterOccasions.length})` : ''}
                     </button>
@@ -1081,11 +1120,10 @@ export default function AdminView({
                           <button
                             key={occasion}
                             onClick={() => toggleSelection(occasion, songFilterOccasions, setSongFilterOccasions)}
-                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${
-                              songFilterOccasions.includes(occasion)
+                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${songFilterOccasions.includes(occasion)
                                 ? 'bg-on-surface-variant/20 text-on-surface-variant font-semibold'
                                 : 'text-on-surface hover:bg-surface-container/50'
-                            }`}
+                              }`}
                           >
                             {occasion}
                           </button>
@@ -1097,11 +1135,10 @@ export default function AdminView({
                   <div className="relative">
                     <button
                       onClick={() => setOpenSongFilterDropdown(openSongFilterDropdown === 'genero' ? null : 'genero')}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${
-                        songFilterGenres.length > 0
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${songFilterGenres.length > 0
                           ? 'bg-primary/10 border-primary text-primary'
                           : 'bg-surface-container-lowest border-outline-variant/30 text-on-surface hover:border-primary'
-                      }`}
+                        }`}
                     >
                       Género {songFilterGenres.length > 0 ? `(${songFilterGenres.length})` : ''}
                     </button>
@@ -1111,11 +1148,10 @@ export default function AdminView({
                           <button
                             key={genre}
                             onClick={() => toggleSelection(genre, songFilterGenres, setSongFilterGenres)}
-                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${
-                              songFilterGenres.includes(genre)
+                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${songFilterGenres.includes(genre)
                                 ? 'bg-primary/20 text-primary font-semibold'
                                 : 'text-on-surface hover:bg-surface-container/50'
-                            }`}
+                              }`}
                           >
                             {genre}
                           </button>
@@ -1127,11 +1163,10 @@ export default function AdminView({
                   <div className="relative">
                     <button
                       onClick={() => setOpenSongFilterDropdown(openSongFilterDropdown === 'artista' ? null : 'artista')}
-                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${
-                        songFilterArtists.length > 0
+                      className={`px-4 py-2 rounded-full text-sm font-medium transition-all border ${songFilterArtists.length > 0
                           ? 'bg-error/10 border-error text-error'
                           : 'bg-surface-container-lowest border-outline-variant/30 text-on-surface hover:border-error'
-                      }`}
+                        }`}
                     >
                       Artista {songFilterArtists.length > 0 ? `(${songFilterArtists.length})` : ''}
                     </button>
@@ -1141,11 +1176,10 @@ export default function AdminView({
                           <button
                             key={artist}
                             onClick={() => toggleSelection(artist, songFilterArtists, setSongFilterArtists)}
-                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${
-                              songFilterArtists.includes(artist)
+                            className={`block w-full text-left px-4 py-2.5 border-b border-outline-variant/10 last:border-b-0 text-sm transition-colors ${songFilterArtists.includes(artist)
                                 ? 'bg-error/20 text-error font-semibold'
                                 : 'text-on-surface hover:bg-surface-container/50'
-                            }`}
+                              }`}
                           >
                             {artist}
                           </button>
@@ -1178,22 +1212,20 @@ export default function AdminView({
                 <div className="px-5 py-3 border-b border-outline-variant/10 flex items-center justify-end gap-2">
                   <button
                     onClick={() => setSongViewMode('detailed')}
-                    className={`p-2 rounded-lg border transition-colors ${
-                      songViewMode === 'detailed'
+                    className={`p-2 rounded-lg border transition-colors ${songViewMode === 'detailed'
                         ? 'border-primary text-primary bg-primary/10'
                         : 'border-outline-variant/30 text-on-surface-variant hover:text-on-surface'
-                    }`}
+                      }`}
                     title="Vista detallada"
                   >
                     <Grid3x3 size={16} />
                   </button>
                   <button
                     onClick={() => setSongViewMode('compact')}
-                    className={`p-2 rounded-lg border transition-colors ${
-                      songViewMode === 'compact'
+                    className={`p-2 rounded-lg border transition-colors ${songViewMode === 'compact'
                         ? 'border-primary text-primary bg-primary/10'
                         : 'border-outline-variant/30 text-on-surface-variant hover:text-on-surface'
-                    }`}
+                      }`}
                     title="Vista compacta"
                   >
                     <List size={16} />
@@ -1268,11 +1300,10 @@ export default function AdminView({
                                   <div className="flex items-center justify-end gap-2 text-on-surface-variant">
                                     <button
                                       onClick={() => toggleEventSelectionSong(song.id)}
-                                      className={`px-2 py-1 rounded border text-xs transition-colors ${
-                                        isInEventList
+                                      className={`px-2 py-1 rounded border text-xs transition-colors ${isInEventList
                                           ? 'border-error/40 text-error hover:bg-error/10'
                                           : 'border-primary/40 text-primary hover:bg-primary/10'
-                                      }`}
+                                        }`}
                                       title={isInEventList ? 'Quitar de mi lista' : 'Agregar a mi lista'}
                                     >
                                       {isInEventList ? 'Quitar' : 'Añadir'}
@@ -1334,11 +1365,10 @@ export default function AdminView({
                               )}
                               <button
                                 onClick={() => toggleEventSelectionSong(song.id)}
-                                className={`px-2 py-1 rounded border text-[11px] transition-colors ${
-                                  isInEventList
+                                className={`px-2 py-1 rounded border text-[11px] transition-colors ${isInEventList
                                     ? 'border-error/40 text-error hover:bg-error/10'
                                     : 'border-primary/40 text-primary hover:bg-primary/10'
-                                }`}
+                                  }`}
                               >
                                 {isInEventList ? 'Quitar' : 'Añadir'}
                               </button>
@@ -1444,17 +1474,15 @@ export default function AdminView({
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setUserRoleFilter('musician')}
-                    className={`px-3 py-2 rounded-lg border text-sm ${
-                      userRoleFilter === 'musician' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface'
-                    }`}
+                    className={`px-3 py-2 rounded-lg border text-sm ${userRoleFilter === 'musician' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface'
+                      }`}
                   >
                     Músicos
                   </button>
                   <button
                     onClick={() => setUserRoleFilter('admin')}
-                    className={`px-3 py-2 rounded-lg border text-sm ${
-                      userRoleFilter === 'admin' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface'
-                    }`}
+                    className={`px-3 py-2 rounded-lg border text-sm ${userRoleFilter === 'admin' ? 'border-primary text-primary bg-primary/10' : 'border-outline-variant/30 text-on-surface'
+                      }`}
                   >
                     Admin
                   </button>
@@ -1593,18 +1621,18 @@ export default function AdminView({
                         {catalog[type]
                           .filter((v) => normalizeString(v).includes(normalizeString(catalogSearch[type])))
                           .map((value) => (
-                          <div key={value} className="flex items-center justify-between gap-2 bg-surface-container p-2 rounded-lg">
-                            <span className="text-sm text-on-surface truncate">{value}</span>
-                            <div className="flex items-center gap-1">
-                              <button onClick={() => handleRenameCatalogValue(type, value)} className="p-1 text-on-surface-variant hover:text-primary" title="Renombrar">
-                                <Pencil size={14} />
-                              </button>
-                              <button onClick={() => handleRemoveCatalogValue(type, value)} className="p-1 text-on-surface-variant hover:text-error" title="Eliminar">
-                                <X size={14} />
-                              </button>
+                            <div key={value} className="flex items-center justify-between gap-2 bg-surface-container p-2 rounded-lg">
+                              <span className="text-sm text-on-surface truncate">{value}</span>
+                              <div className="flex items-center gap-1">
+                                <button onClick={() => handleRenameCatalogValue(type, value)} className="p-1 text-on-surface-variant hover:text-primary" title="Renombrar">
+                                  <Pencil size={14} />
+                                </button>
+                                <button onClick={() => handleRemoveCatalogValue(type, value)} className="p-1 text-on-surface-variant hover:text-error" title="Eliminar">
+                                  <X size={14} />
+                                </button>
+                              </div>
                             </div>
-                          </div>
-                        ))}
+                          ))}
                       </div>
                     </div>
                   ))}
@@ -1635,7 +1663,7 @@ export default function AdminView({
                     placeholder="Ej. José Alfredo Jiménez"
                     className={`w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-all ${isNewArtist ? 'border-primary/50 bg-primary/5' : ''}`}
                   />
-                  
+
                   {showArtistSuggestions && suggestedArtists.length > 0 && (
                     <div className="absolute top-full left-0 right-0 z-50 mt-1 bg-surface-container-low border border-outline-variant/30 rounded-xl shadow-xl overflow-hidden animate-in fade-in slide-in-from-top-1">
                       {suggestedArtists.map((artist) => (
@@ -1714,6 +1742,12 @@ export default function AdminView({
                 </button>
               </div>
             </form>
+          </div>
+        )}
+
+        {activeSection === 'reviews' && role === 'admin' && (
+          <div className="mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+            <AdminReviews />
           </div>
         )}
 
