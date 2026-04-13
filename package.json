@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
+    "sync:main": "node scripts/syncMainBranch.mjs",
     "seed:songs": "node scripts/seedSongs.mjs",
     "wp:extract": "node scripts/wpMigrationPrep.mjs",
     "wp:extract:scan": "node scripts/wpMigrationPrep.mjs --scan-pages",
