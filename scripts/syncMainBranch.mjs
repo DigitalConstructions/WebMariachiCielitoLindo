@@ -104,7 +104,7 @@ async function main() {
     console.log('Dry run enabled. No changes will be pushed.');
   }
 
-  run(`git worktree add --checkout --detach ${JSON.stringify(tempDir)} ${targetBranch}`);
+  run(`git worktree add --checkout ${JSON.stringify(tempDir)} ${targetBranch}`);
 
   try {
     await removeExtraFiles(tempDir);
