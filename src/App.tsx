@@ -33,31 +33,31 @@ const BACKGROUND_PLAYLIST = [
 
 const SEO_CONFIG: Record<string, { title: string, description: string }> = {
   '/': { 
-    title: 'Mariachi Guayaquil | Mariachi Internacional Cielito Lindo 🎺', 
+    title: 'Mariachi Guayaquil | Mariachi Cielito Lindo 🎺', 
     description: 'El mejor mariachi en Guayaquil, Ecuador. 12 músicos en escena para serenatas, bodas, quinceañeras y cumpleaños. ☎ 098 721 6439.' 
   },
   '/nosotros': { 
-    title: 'Nuestro Mariachi en Guayaquil | Mariachi Cielito Lindo 🎺', 
+    title: 'Nuestra Historia | Mariachi Cielito Lindo 🎻', 
     description: 'Conoce la trayectoria del mejor mariachi de Guayaquil. Músicos profesionales brindando serenatas y pasión mexicana en Guayas y Ecuador.' 
   },
   '/galeria': { 
-    title: 'Fotos y Videos del Mejor Mariachi en Guayaquil | Cielito Lindo 📸', 
+    title: 'Fotos y Videos | Mariachi Cielito Lindo 📸', 
     description: 'Mira las presentaciones, serenatas, bodas y fiestas animadas por el Mariachi Internacional Cielito Lindo en Guayaquil.' 
   },
   '/resenas': { 
-    title: 'Reseñas 5 Estrellas | Mariachi Guayaquil Cielito Lindo ★★★★★', 
+    title: 'Reseñas 5 Estrellas | Mariachi Cielito Lindo ⭐', 
     description: 'Lee testimonios reales de nuestros clientes en Guayaquil. Somos el mariachi mejor calificado, destacado por puntualidad, talento y carisma.' 
   },
   '/repertorio': { 
-    title: 'Canciones para Serenata en Guayaquil | Mariachi Cielito Lindo 🎵', 
+    title: 'Repertorio y Canciones | Mariachi Cielito Lindo 🎵', 
     description: 'Explora nuestro repertorio de mariachi: rancheras, boleros, cumbias para cumpleaños, bodas, quinceañeras y velorios en Guayaquil.' 
   },
-  '/contacto': { 
-    title: 'Contratar Mariachi en Guayaquil | Precios y Reservas 📞', 
+  '/contactenos': { 
+    title: 'Contratar Mariachi Guayaquil | Precios 📞', 
     description: 'Contrata el mejor mariachi en Guayaquil. Agenda tu serenata por WhatsApp al 098 721 6439. Atención rápida y precios competitivos.' 
   },
   '/portal-mcl': { 
-    title: 'Portal Privado | Mariachi Cielito Lindo', 
+    title: 'Portal Privado | Mariachi Cielito Lindo 🔒', 
     description: 'Acceso administrativo para miembros del Mariachi Cielito Lindo.' 
   }
 };
@@ -185,7 +185,7 @@ export default function App() {
     { id: 'gallery', label: 'Galería', path: '/galeria' },
     { id: 'reviews', label: 'Reseñas', path: '/resenas' },
     { id: 'repertoire', label: 'Repertorio', path: '/repertorio' },
-    { id: 'contact', label: 'Contacto', path: '/contacto' },
+    { id: 'contact', label: 'Contacto', path: '/contactenos' },
   ];
 
   const handleYoutubePlayerStateChange = (isOpen: boolean) => {
@@ -209,7 +209,7 @@ export default function App() {
     gallery: '/galeria',
     reviews: '/resenas',
     repertoire: '/repertorio',
-    contact: '/contacto',
+    contact: '/contactenos',
     admin: '/portal-mcl'
   };
 
@@ -416,7 +416,7 @@ export default function App() {
               <Route path="/galeria" element={<GalleryView setView={handleNavigateView} onYoutubePlayerStateChange={handleYoutubePlayerStateChange} />} />
               <Route path="/resenas" element={<ReviewsView />} />
               <Route path="/repertorio" element={<RepertoireView setView={handleNavigateView} onYoutubePlayerStateChange={handleYoutubePlayerStateChange} />} />
-              <Route path="/contacto" element={<ContactView />} />
+              <Route path="/contactenos" element={<ContactView />} />
               <Route path="/portal-mcl" element={
                 (user || isDoorRevealed) ? (
                   <AdminView
