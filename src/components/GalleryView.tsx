@@ -14,6 +14,9 @@ const PASARELA_PHOTOS = import.meta.glob('../../medios/fotos_pasarela/*.{jpg,jpe
 }) as Record<string, string>;
 
 const HERO_MAIN_PHOTO = new URL('../../medios/foto_principal/gradasOK.png', import.meta.url).href;
+const FIRST_PASARELA_PHOTO = Object.entries(PASARELA_PHOTOS)
+  .sort(([a], [b]) => a.localeCompare(b))
+  .map(([_, src]) => src)[0] ?? HERO_MAIN_PHOTO;
 type FeaturedVideo = {
   id: string;
   type: 'youtube' | 'local';
@@ -22,6 +25,33 @@ type FeaturedVideo = {
   title: string;
   desc: string;
 };
+
+function extractYouTubeVideoId(value: string) {
+  const trimmed = value.trim();
+  if (!trimmed) return null;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(trimmed)) return trimmed;
+
+  try {
+    const url = new URL(trimmed);
+    const hostname = url.hostname.replace('www.', '');
+
+    if (hostname === 'youtu.be') {
+      return url.pathname.slice(1);
+    }
+
+    if (hostname.endsWith('youtube.com')) {
+      const pathParts = url.pathname.split('/').filter(Boolean);
+      const embedIndex = pathParts.findIndex((part) => part === 'embed' || part === 'shorts');
+      if (embedIndex !== -1 && pathParts[embedIndex + 1]) return pathParts[embedIndex + 1];
+      const vParam = url.searchParams.get('v');
+      if (vParam) return vParam;
+    }
+  } catch (error) {
+    return null;
+  }
+
+  return null;
+}
 
 const FEATURED_VIDEOS: FeaturedVideo[] = [
   {
@@ -33,19 +63,18 @@ const FEATURED_VIDEOS: FeaturedVideo[] = [
   },
   {
     id: 'f2',
-    type: 'local',
-    src: new URL('../../medios/videos_destacados/IMG_3481.mp4', import.meta.url).href,
-    thumbSrc: new URL('../../medios/fotos_pasarela/Pasarela_Cielito_Lindo_02.png', import.meta.url).href,
-    title: 'La Excelencia en la Música',
-    desc: 'La elegancia y el brillo de nuestra presentación capturados en momentos espontáneos.',
+    type: 'youtube',
+    src: 'https://www.youtube.com/shorts/-419wE3H20I?feature=share',
+    thumbSrc: FIRST_PASARELA_PHOTO,
+    title: 'Sentimiento que Cautiva',
+    desc: 'Reviva la pasión y la energía de nuestra música en cada nota interpretada.',
   },
   {
     id: 'f3',
-    type: 'local',
-    src: new URL('../../medios/videos_destacados/GDBE0890.mp4', import.meta.url).href,
-    thumbSrc: new URL('../../medios/fotos_pasarela/Pasarela_Cielito_Lindo_05.jpg', import.meta.url).href,
-    title: 'Sentimiento Ranchero',
-    desc: 'Reviva la pasión y la energía de nuestra música en cada nota interpretada.',
+    type: 'youtube',
+    src: 'https://www.youtube.com/shorts/AoiooRMgbEw?feature=share',
+    title: 'La Excelencia en la Música',
+    desc: 'La elegancia y el brillo de nuestra presentación capturados en momentos espontáneos.',
   }
 ];
 
@@ -74,11 +103,11 @@ const SIMPLE_PHOTO_LABELS = [
   { title: 'Aniversarios', subtitle: 'Serenatas para celebrar momentos en pareja.' },
   { title: 'Celebraciones Especiales', subtitle: 'Presentaciones para fechas memorables.' },
   { title: 'Eventos Conmemorativos', subtitle: 'Acompanamiento musical en homenajes y reuniones.' },
-  { title: 'Cumpleanos', subtitle: 'Shows en vivo para fiestas de cumpleanos.' },
+  { title: 'Cumpleaños', subtitle: 'Shows en vivo para fiestas de cumpleaños.' },
   { title: 'Fiestas en Familia', subtitle: 'Ambiente alegre para compartir con seres queridos.' },
-  { title: 'Gala Quinceanera', subtitle: 'Entrada y repertorio para noches de quince.' },
+  { title: 'Gala Quinceanera', subtitle: 'Entrada y repertorio para noches de quinceaños.' },
   { title: 'Graduaciones', subtitle: 'Musica especial para logros academicos.' },
-  { title: 'Quinceaneras', subtitle: 'Mariachi en vivo para una celebracion inolvidable.' },
+  { title: 'Quinceañeras', subtitle: 'Mariachi en vivo para una celebracion inolvidable.' },
 ];
 
 const PASARELA_SLIDES = Object.entries(PASARELA_PHOTOS)
@@ -127,15 +156,21 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
       setActivePhoto((prev) => (prev + 1) % totalPhotos);
     }, 5000);
 
+    return () => {
+      window.clearInterval(photoTimer);
+    };
+  }, [totalPhotos]);
+
+  useEffect(() => {
+    if (totalFeatured <= 1) return;
     const videoTimer = window.setInterval(() => {
       setActiveFeaturedIndex((prev) => (prev + 1) % totalFeatured);
     }, 8000); // 8 seconds per featured video slide
 
     return () => {
-      window.clearInterval(photoTimer);
       window.clearInterval(videoTimer);
     };
-  }, [totalPhotos, totalFeatured]);
+  }, [totalFeatured, activeFeaturedIndex]);
 
   useEffect(() => {
     if (!isPhotoModalOpen || totalPhotos === 0) return;
@@ -195,7 +230,10 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
                 className="absolute inset-0"
               >
                 <img
-                  src={FEATURED_VIDEOS[activeFeaturedIndex].type === 'youtube' ? `https://img.youtube.com/vi/${FEATURED_VIDEOS[activeFeaturedIndex].src}/maxresdefault.jpg` : (FEATURED_VIDEOS[activeFeaturedIndex].thumbSrc || HERO_MAIN_PHOTO)}
+                  src={FEATURED_VIDEOS[activeFeaturedIndex].thumbSrc
+                    || (FEATURED_VIDEOS[activeFeaturedIndex].type === 'youtube'
+                      ? `https://img.youtube.com/vi/${extractYouTubeVideoId(FEATURED_VIDEOS[activeFeaturedIndex].src) ?? FEATURED_VIDEOS[activeFeaturedIndex].src}/maxresdefault.jpg`
+                      : HERO_MAIN_PHOTO)}
                   alt={FEATURED_VIDEOS[activeFeaturedIndex].title}
                   className="absolute inset-0 w-full h-full object-cover"
                   loading="lazy"
@@ -431,7 +469,7 @@ export default function GalleryView({ setView, onYoutubePlayerStateChange }: { s
                 {activeVideoPlayer.type === 'youtube' ? (
                   <iframe
                     className="w-full h-full"
-                    src={`https://www.youtube.com/embed/${activeVideoPlayer.src}?autoplay=1&rel=0`}
+                    src={`https://www.youtube.com/embed/${extractYouTubeVideoId(activeVideoPlayer.src) ?? activeVideoPlayer.src}?autoplay=1&rel=0`}
                     title={`YouTube player - ${activeVideoPlayer.title}`}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
