@@ -489,7 +489,7 @@ export default function App() {
           <div className="mt-1">
             Desarrollado por{' '}
             <a
-              href="https://abvcdigital.netlify.app/"
+              href="https://digitalconstructions.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary-container underline underline-offset-2"

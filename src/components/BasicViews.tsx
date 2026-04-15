@@ -4,9 +4,9 @@ import { ChevronRight, PlayCircle, ArrowRight, Phone, Mail, MapPin, Music } from
 import { ViewState } from '../types';
 
 const ABOUT_BG_VIDEOS = [
-  new URL('../../medios/videos_bg/hero_cinco.mp4', import.meta.url).href,
-  new URL('../../medios/videos_bg/hero_doce.mp4', import.meta.url).href,
-  new URL('../../medios/videos_bg/hero_seis.mp4', import.meta.url).href,
+  import.meta.env.VITE_ABOUT_BG_VIDEO_1 || 'https://res.cloudinary.com/dkoupxlif/video/upload/v1776194369/hero_cinco_vtyizy.mp4',
+  import.meta.env.VITE_ABOUT_BG_VIDEO_2 || 'https://res.cloudinary.com/dkoupxlif/video/upload/v1776194369/hero_doce_ght68k.mp4',
+  import.meta.env.VITE_ABOUT_BG_VIDEO_3 || 'https://res.cloudinary.com/dkoupxlif/video/upload/v1776194369/hero_seis_yn9hgg.mp4',
 ];
 
 const CONTACT_BG_IMAGE = new URL('../../medios/foto_principal/gradasOK.png', import.meta.url).href;
