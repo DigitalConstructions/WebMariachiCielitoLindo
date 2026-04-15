@@ -15,25 +15,35 @@ export const HomeView = ({ setView }: { setView: (v: ViewState) => void, key?: s
   return (
     <motion.section
       initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-      className="relative h-screen w-full flex items-center justify-center overflow-hidden"
+      className="relative min-h-[100svh] w-full flex items-center justify-center overflow-hidden py-32"
     >
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-surface/70 z-10 mix-blend-multiply"></div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-surface/50 to-surface z-10"></div>
         <img src="https://images.unsplash.com/photo-1511192336575-5a79af67a629?q=80&w=2664&auto=format&fit=crop" alt="Mariachi cantando" className="w-full h-full object-cover" referrerPolicy="no-referrer" />
       </div>
-      <div className="relative z-20 text-center px-6 max-w-5xl mt-20">
+      <div className="relative z-20 text-center px-6 max-w-5xl flex flex-col items-center mt-8 md:mt-16">
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }} 
+          animate={{ opacity: 1, scale: 1 }} 
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-primary/30 bg-primary/5 backdrop-blur-md mb-8"
+        >
+          <MapPin size={14} className="text-primary" />
+          <span className="text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] text-on-surface">Guayaquil · Ecuador</span>
+        </motion.div>
+
         <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} className="font-serif text-5xl md:text-7xl lg:text-8xl mb-6 text-primary tracking-tight leading-tight text-shadow-editorial">
-          La Excelencia de la <br /> <span className="italic font-light text-on-surface">Música Mexicana</span>
+          La Excelencia <br className="md:hidden" /> de&nbsp;la <br /> <span className="italic font-light text-on-surface text-4xl md:text-6xl lg:text-7xl block mt-2">Música Mexicana en Guayaquil</span>
         </motion.h1>
-        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} className="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-12 font-light tracking-wide">
-          Elevamos sus celebraciones con interpretaciones magistrales y la elegancia que solo el mejor Mariachi puede ofrecer.
+        <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1, delay: 0.6 }} className="font-body text-lg md:text-xl text-on-surface-variant max-w-2xl mx-auto mb-10 md:mb-12 font-light tracking-wide leading-relaxed">
+          Nuestra misión es hacer vibrar cada corazón con la auténtica música mexicana, entregando pasión, calidad y elegancia en cada canción, para transformar tus celebraciones en recuerdos inolvidables.
         </motion.p>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.8 }} className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <button onClick={() => setView('repertoire')} className="gold-gradient text-on-primary px-10 py-4 font-bold text-lg hover:shadow-[0_0_30px_rgba(255,203,70,0.3)] transition-all rounded-full flex items-center gap-2">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.8 }} className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 w-full sm:w-auto">
+          <button onClick={() => setView('repertoire')} className="gold-gradient text-on-primary px-8 py-4 font-bold text-lg hover:shadow-[0_0_30px_rgba(255,203,70,0.3)] transition-all rounded-full flex items-center justify-center gap-2 w-full sm:w-auto">
             Ver Repertorio <ChevronRight size={20} />
           </button>
-          <button onClick={() => setView('gallery')} className="border border-outline-variant text-primary px-10 py-4 font-bold text-lg hover:bg-surface-container transition-all flex items-center gap-3 rounded-full">
+          <button onClick={() => setView('gallery')} className="border border-outline-variant text-primary px-8 py-4 font-bold text-lg hover:bg-surface-container transition-all flex items-center justify-center gap-3 rounded-full w-full sm:w-auto">
             <PlayCircle size={24} /> Ver Presentaciones
           </button>
         </motion.div>

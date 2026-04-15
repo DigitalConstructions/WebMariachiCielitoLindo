@@ -485,6 +485,7 @@ export default function App() {
           </a>
         </div>
         <div className="text-on-surface-variant text-xs font-light text-center md:text-right">
+          <div className="mb-1 font-bold text-on-surface/80">Guayaquil, Ecuador</div>
           <div>© 2026 Mariachi Cielito Lindo. Todos los derechos reservados.</div>
           <div className="mt-1">
             Desarrollado por{' '}
