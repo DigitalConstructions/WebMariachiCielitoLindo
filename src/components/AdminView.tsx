@@ -148,6 +148,47 @@ export default function AdminView({
   role?: 'admin' | 'musician' | null;
   key?: string
 }) {
+  const [ytPlayability, setYtPlayability] = useState<Record<string, 'checking' | 'ok' | 'restricted' | 'not_found'>>({});
+  const [ytVideoTitles, setYtVideoTitles] = useState<Record<string, string>>({});
+  const [ytTestId, setYtTestId] = useState<string | null>(null);
+
+  const checkVideoPlayability = async (url: string) => {
+    const id = extractYouTubeId(url);
+    if (!id) return;
+
+    // Si ya fue validado, no repetir
+    if (ytPlayability[id] && ytPlayability[id] !== 'checking') return;
+
+    setYtPlayability(prev => ({ ...prev, [id]: 'checking' }));
+
+    try {
+      // El endpoint oEmbed de YouTube devuelve 401/403 si el video
+      // tiene el embedding DESACTIVADO por el autor (copyright / restricción).
+      // Si responde con JSON, el video SÍ puede incrustarse.
+      const oembedUrl = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${id}&format=json`;
+      const res = await fetch(oembedUrl);
+
+      if (res.ok) {
+        const data = await res.json();
+        setYtPlayability(prev => ({ ...prev, [id]: 'ok' }));
+        setYtVideoTitles(prev => ({ ...prev, [id]: data.title || '' }));
+      } else if (res.status === 401 || res.status === 403) {
+        // Embedding bloqueado por el autor
+        setYtPlayability(prev => ({ ...prev, [id]: 'restricted' }));
+      } else if (res.status === 404) {
+        // Video no existe o es privado
+        setYtPlayability(prev => ({ ...prev, [id]: 'not_found' }));
+      } else {
+        // Otro error desconocido, marcar como restringido por precaución
+        setYtPlayability(prev => ({ ...prev, [id]: 'restricted' }));
+      }
+    } catch {
+      // Error de red o CORS — tratarlo por separado
+      // oEmbed no tiene restricciones CORS, si falla es un error de red
+      setYtPlayability(prev => ({ ...prev, [id]: 'not_found' }));
+    }
+  };
+
   const [user, setUser] = useState<User | null>(initialUser || null);
   const [role, setRole] = useState<'admin' | 'musician' | null>(initialRole || null);
   const [loadingAuth, setLoadingAuth] = useState(!initialUser);
@@ -202,6 +243,16 @@ export default function AdminView({
   const [editSongGenreSearch, setEditSongGenreSearch] = useState('');
   const [editSongOccasionSearch, setEditSongOccasionSearch] = useState('');
   const [isSavingEdit, setIsSavingEdit] = useState(false);
+
+  // Bloquear scroll del body cuando el modal de edición está abierto
+  useEffect(() => {
+    if (editingSong) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+    return () => { document.body.style.overflow = ''; };
+  }, [editingSong]);
 
   const [newUser, setNewUser] = useState({ email: '', name: '', role: 'musician' });
 
@@ -1755,9 +1806,81 @@ export default function AdminView({
                   <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">Enlace Mega</label>
                   <input type="url" value={newSong.link} onChange={(e) => setNewSong({ ...newSong, link: e.target.value })} placeholder="https://mega.nz/..." className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
                 </div>
-                <div>
+                <div className="relative">
                   <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">URL de YouTube</label>
-                  <input type="url" value={newSong.youtubeUrl} onChange={(e) => setNewSong({ ...newSong, youtubeUrl: e.target.value })} placeholder="https://www.youtube.com/watch?v=..." className="w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
+                  <input
+                    type="url"
+                    value={newSong.youtubeUrl}
+                    onChange={(e) => {
+                      setNewSong({ ...newSong, youtubeUrl: e.target.value });
+                      checkVideoPlayability(e.target.value);
+                    }}
+                    placeholder="https://www.youtube.com/watch?v=..."
+                    className={`w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-all ${extractYouTubeId(newSong.youtubeUrl) ? 'border-primary/50' : ''}`}
+                  />
+                  {extractYouTubeId(newSong.youtubeUrl) && (
+                    <motion.div
+                      initial={{ opacity: 0, y: -10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      className={`mt-3 p-2 bg-surface-container-lowest border rounded-2xl overflow-hidden flex gap-3 items-center shadow-lg transition-colors ${
+                        ytPlayability[extractYouTubeId(newSong.youtubeUrl)!] === 'restricted' ? 'border-red-500/50 bg-red-500/5' : 'border-outline-variant/30'
+                      }`}
+                    >
+                      <div className="relative w-24 h-16 rounded-lg overflow-hidden flex-shrink-0 bg-black group/thumb">
+                        <img
+                          src={`https://img.youtube.com/vi/${extractYouTubeId(newSong.youtubeUrl)}/mqdefault.jpg`}
+                          className="w-full h-full object-cover opacity-80"
+                          alt="Previsualización"
+                        />
+                        <button
+                          type="button"
+                          onClick={() => setYtTestId(ytTestId === extractYouTubeId(newSong.youtubeUrl) ? null : extractYouTubeId(newSong.youtubeUrl))}
+                          className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-colors"
+                          title="Probar reproducción"
+                        >
+                          <PlayCircle size={22} className="text-white drop-shadow-lg" />
+                        </button>
+                      </div>
+                      <div className="flex-1 pr-2">
+                        {ytPlayability[extractYouTubeId(newSong.youtubeUrl)!] === 'checking' && (
+                          <>
+                            <p className="text-[10px] font-bold text-on-surface-variant uppercase tracking-widest animate-pulse">Analizando video...</p>
+                            <p className="text-[9px] text-on-surface-variant/70 italic">Verificando derechos de autor</p>
+                          </>
+                        )}
+                        {ytPlayability[extractYouTubeId(newSong.youtubeUrl)!] === 'ok' && (
+                          <>
+                            <p className="text-[10px] font-bold text-green-500 uppercase tracking-widest">✅ APTO PARA WEB</p>
+                            <p className="text-[9px] text-on-surface-variant/80 leading-tight mt-0.5 line-clamp-2">{ytVideoTitles[extractYouTubeId(newSong.youtubeUrl)!]}</p>
+                          </>
+                        )}
+                        {ytPlayability[extractYouTubeId(newSong.youtubeUrl)!] === 'restricted' && (
+                          <>
+                            <p className="text-[10px] font-bold text-red-500 uppercase tracking-widest">❌ RESTRINGIDO</p>
+                            <p className="text-[9px] text-red-500/80 leading-tight">El autor bloqueó la reproducción externa (Copyright).</p>
+                          </>
+                        )}
+                        {ytPlayability[extractYouTubeId(newSong.youtubeUrl)!] === 'not_found' && (
+                          <p className="text-[10px] font-bold text-error uppercase">Video no encontrado o privado</p>
+                        )}
+                        <p className="text-[9px] text-on-surface-variant/50 mt-1">▶ Toca la miniatura para probar</p>
+                      </div>
+                    </motion.div>
+                  )}
+                  {ytTestId === extractYouTubeId(newSong.youtubeUrl) && ytTestId && (
+                    <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="mt-2 rounded-2xl overflow-hidden border border-outline-variant/20 bg-black">
+                      <div className="flex items-center justify-between px-3 py-1.5 bg-surface-container-lowest">
+                        <span className="text-[9px] text-on-surface-variant uppercase tracking-widest">Reproducción de prueba</span>
+                        <button type="button" onClick={() => setYtTestId(null)} className="text-on-surface-variant hover:text-on-surface"><X size={14} /></button>
+                      </div>
+                      <iframe
+                        src={`https://www.youtube.com/embed/${ytTestId}?autoplay=1`}
+                        className="w-full aspect-video"
+                        allow="autoplay; encrypted-media"
+                        allowFullScreen
+                      />
+                    </motion.div>
+                  )}
                 </div>
               </div>
 
@@ -1812,8 +1935,9 @@ export default function AdminView({
         )}
 
         {editingSong && (
-          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto" onClick={() => setEditingSong(null)}>
-            <div className="w-full max-w-3xl bg-surface-container-low rounded-2xl border border-outline-variant/20 p-6" onClick={(e) => e.stopPropagation()}>
+          <div className="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm overflow-y-auto" style={{ overscrollBehavior: 'contain' }}>
+            <div className="min-h-full flex items-start justify-center p-4 py-8">
+              <div className="w-full max-w-3xl bg-surface-container-low rounded-2xl border border-outline-variant/20 p-6">
               <div className="flex items-center justify-between mb-6">
                 <h3 className="font-serif text-2xl text-on-surface">Editar Canción</h3>
                 <button onClick={() => setEditingSong(null)} className="text-on-surface-variant hover:text-on-surface">
@@ -1859,7 +1983,67 @@ export default function AdminView({
                     )}
                   </div>
                   <input type="url" value={editingSong.link || ''} onChange={(e) => setEditingSong({ ...editingSong, link: e.target.value })} placeholder="Enlace Mega" className="bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
-                  <input type="url" value={editingSong.youtubeUrl || ''} onChange={(e) => setEditingSong({ ...editingSong, youtubeUrl: e.target.value })} placeholder="URL YouTube" className="bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface" />
+                  <div className="md:col-span-2 relative">
+                    <label className="block text-[10px] font-bold uppercase tracking-wider text-on-surface-variant mb-2">URL de YouTube (Opcional)</label>
+                    <input
+                      type="url"
+                      value={editingSong.youtubeUrl || ''}
+                      onChange={(e) => {
+                        setEditingSong({ ...editingSong, youtubeUrl: e.target.value });
+                        checkVideoPlayability(e.target.value);
+                      }}
+                      placeholder="https://www.youtube.com/watch?v=..."
+                      className={`w-full bg-surface-container-lowest border border-outline-variant/20 rounded-xl px-4 py-3 text-on-surface focus:outline-none focus:border-primary transition-all ${extractYouTubeId(editingSong.youtubeUrl) ? 'border-primary/50' : ''}`}
+                    />
+                    {extractYouTubeId(editingSong.youtubeUrl) && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.95 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        className="mt-3 p-2 bg-surface-container border border-outline-variant/20 rounded-2xl flex gap-4 items-center shadow-md"
+                      >
+                        <div className="relative w-32 h-20 rounded-xl overflow-hidden flex-shrink-0 bg-black border border-white/5">
+                          <img
+                            src={`https://img.youtube.com/vi/${extractYouTubeId(editingSong.youtubeUrl)}/mqdefault.jpg`}
+                            className="w-full h-full object-cover"
+                            alt="Preview"
+                          />
+                          <button
+                            type="button"
+                            onClick={() => setYtTestId(ytTestId === extractYouTubeId(editingSong.youtubeUrl) ? null : extractYouTubeId(editingSong.youtubeUrl))}
+                            className="absolute inset-0 flex items-center justify-center bg-black/30 hover:bg-black/10 transition-colors"
+                            title="Probar reproducción"
+                          >
+                            <PlayCircle size={24} className="text-white" />
+                          </button>
+                        </div>
+                        <div>
+                          <p className="text-xs font-bold text-primary mb-1 uppercase tracking-tighter">Vista Previa del Video</p>
+                          {ytPlayability[extractYouTubeId(editingSong.youtubeUrl)!] === 'restricted' ? (
+                            <p className="text-[10px] text-red-500 font-bold">❌ Restringido — puede no reproducirse en el sitio</p>
+                          ) : ytPlayability[extractYouTubeId(editingSong.youtubeUrl)!] === 'ok' ? (
+                            <p className="text-[10px] text-green-500 font-bold">✅ Apto — {ytVideoTitles[extractYouTubeId(editingSong.youtubeUrl)!]}</p>
+                          ) : (
+                            <p className="text-[10px] text-on-surface-variant">▶ Toca la miniatura para probar</p>
+                          )}
+                          <span className="inline-block mt-2 text-[9px] bg-primary/10 text-primary px-2 py-0.5 rounded-md font-bold">CONFIGURADO</span>
+                        </div>
+                      </motion.div>
+                    )}
+                    {ytTestId === extractYouTubeId(editingSong.youtubeUrl) && ytTestId && (
+                      <motion.div initial={{ opacity: 0, scale: 0.97 }} animate={{ opacity: 1, scale: 1 }} className="mt-2 rounded-2xl overflow-hidden border border-outline-variant/20 bg-black">
+                        <div className="flex items-center justify-between px-3 py-1.5 bg-surface-container-lowest">
+                          <span className="text-[9px] text-on-surface-variant uppercase tracking-widest">Reproducción de prueba</span>
+                          <button type="button" onClick={() => setYtTestId(null)} className="text-on-surface-variant hover:text-on-surface"><X size={14} /></button>
+                        </div>
+                        <iframe
+                          src={`https://www.youtube.com/embed/${ytTestId}?autoplay=1`}
+                          className="w-full aspect-video"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
+                        />
+                      </motion.div>
+                    )}
+                  </div>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1897,6 +2081,7 @@ export default function AdminView({
                 </div>
               </form>
             </div>
+          </div>
           </div>
         )}
 
